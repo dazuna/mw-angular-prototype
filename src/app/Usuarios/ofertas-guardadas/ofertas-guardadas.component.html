@@ -1,0 +1,148 @@
+<app-header></app-header>
+<app-tarjetas></app-tarjetas>
+  <section class="alto">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ptitulo">
+          <h2 class="text-center">{{'comment-modalsavedoffer'|translate}}</h2>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="tabla-ofertas text-center">
+                <th class="font-weight-light" scope="col" colspan="2">{{'publish-job-info'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'publish-preview-company'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'index-compregistration-countrylbl'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'area'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'index-offer-reward'|translate}}</th>
+                <th class="font-weight-light" scope="col">Hitch</th>
+                <th class="font-weight-light" scope="col">{{'general-button-delete'|translate}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr valign="middle ">
+                <td class="text-center"><img class="imgRedonda posicion-imagen" src="../../assets/img/profiledefault.png" alt=""></td>
+                <td><a href="#">Vacante </a> </td>
+                <td><p>empresa</p></td>
+                <td><p>país</p></td>
+                <td><p>área</p> </td>
+                <td><p>recompensa</p></td>
+                <td class="text-center"><a type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="flecha"><i class="fas fa-link"></i></a></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td class="text-center"><img class="imgRedonda posicion-imagen" src="../../assets/img/profiledefault.png" alt=""></td>
+                <td><a href="#">Vacante </a> </td>
+                <td><p>empresa 2</p></td>
+                <td><p>país 2</p></td>
+                <td><p>área 2</p> </td>
+                <td><p>recompensa 2</p></td>
+                <td class="text-center"><a href="#" class="flecha"><i class="fas fa-link"></i></a></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td class="text-center"><img class="imgRedonda posicion-imagen" src="../../assets/img/profiledefault.png" alt=""></td>
+                <td><a href="#">Vacante </a> </td>
+                <td><p>empresa</p></td>
+                <td><p>país</p></td>
+                <td><p>área</p> </td>
+                <td><p>recompensa</p></td>
+                <td class="text-center"><a href="#" class="flecha"><i class="fas fa-link"></i></a></td>
+                <td class="text-center"><a href="#"><i class="far fa-trash-alt"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content container">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="hazhitch">Haz Hitch</h4>
+            </div>
+            <div  class="col-6">
+              <i class="close" data-dismiss="modal" class="fas fa-times-circle close"></i>
+            </div>
+            <hr>
+          </div>
+          <div class="naranja text-center">
+            <i class="fas fa-link hit"></i>
+          </div>
+          <div class="text-center">
+            <hr>
+            <p class="letranaranja ">"Selecciona un candidato"</p>
+          </div>
+          <div class="row">
+              <div class="col-12 text-center">
+                <h3>'Empresa' busca a 'Vacante'</h3>
+                <h5>¡<u><strong>Recuerda</strong></u> que aquí vas a recomendar a tus amigos para que <u><strong>TU</strong></u> recibas la recompensa!</h5>
+                <p class="letragris">Recomienda mediante email :</p>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="offset-1 col-1">
+                  <i class="fas fa-envelope icolor" aria-hidden="true"></i>
+                </div>
+                <div class="col-8">
+                  <mat-form-field>
+                    <input matInput placeholder="E-mail">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-lg Color-muuwho texto-boton">Enviar Hitch</button>
+              </div>
+            <hr>
+
+          <div class="row">
+            <div class="offset-1 col-8">
+              <mat-form-field>
+                <input matInput placeholder="Buscador">
+              </mat-form-field>
+            </div>
+            <div class="col-1">
+              <i class="fa fa-search icolor" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr class="tabla-ofertas text-center">
+                  <th class="font-weight-light" scope="col" colspan="2">Nombre</th>
+                  <th class="font-weight-light" scope="col">Ocupación</th>
+                  <th class="font-weight-light" scope="col">Lugar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr valign="middle">
+                  <td class="text-center"><img class="imgRedonda posicion-imagen" src="../../assets/img/profiledefault.png" alt=""></td>
+                  <td><p>nombre</p></td>
+                  <td><p>ocupación</p></td>
+                  <td><p>lugar</p> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row ml">
+            <div class="p5">
+              <button type="button" class="btn btn-primary btn-lg cancelar texto-boton">Cancelar</button>
+            </div>
+            <div class="p5">
+              <button type="button" class="btn btn-primary btn-lg Color-muuwho Color-muuwho2 texto-boton ">Hitch</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+<app-footer></app-footer>

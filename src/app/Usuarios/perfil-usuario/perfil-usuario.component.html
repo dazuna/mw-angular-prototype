@@ -1,0 +1,485 @@
+<app-header></app-header>
+<app-tarjetas></app-tarjetas>
+
+<section>
+  <div class="container">
+      <div class="row fondoblanco">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="perfilcover"></div>
+
+          <div class="perfilPicBorde">
+            <a type="button" class="camara flecha" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-camera-retro"></i></a>
+            <img [src]="imageToDisplay" alt="imagen_perfil" class="perfilPic imguser">
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="d-none d-md-block">
+  <div class="container">
+    <div class="row fondoblanco margenseccion">
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <p class="contactos">{{'ppp-info-contacts'|translate}}</p>
+        <div class="row">
+            <div class="circulo">
+
+            </div>
+            <div class="circulo">
+
+            </div>
+            <div class="circulo">
+
+            </div>
+            <div class="circulo">
+
+            </div>
+            <div class="circulo">
+
+            </div>
+            <div class="circulo">
+
+            </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="row btnderecha">
+
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <button type="button" routerLink="/editar-perfil" class="btn btn-outline-primary configuracion btn-sm">{{'headeru-menu-conf'|translate}} <i class="fas fa-cogs"></i></button>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <button type="button" routerLink="/editar-usuario" class="btn btn-outline-primary editar-perfil btn-sm">{{'editar-perfil'|translate}} <i class="fas fa-pencil-alt"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-xl-12 col-lg-12 col-md-12">
+        <h3 class="font-weight-light">Nombre Apellidos</h3>
+        <h4 class="font-weight-light">Formación Academica</h4>
+        <h5 class="font-weight-light">Ubicación</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="d-md-none">
+  <div class="container">
+    <div class="row fondoblanco">
+      <div class="col-md-10 col-sm-8 col-12">
+        <h3 class="font-weight-light text-center">Nombre Apellidos</h3>
+      </div>
+      <div class="col-md-1 col-sm-2 col-6">
+        <i routerLink="/editar-perfil" class="fas fa-cogs flecha col text-center"></i>
+      </div>
+      <div class="col-md-1 col-sm-2 col-6">
+        <i routerLink="/editar-usuario" class="fas fa-pencil-alt flecha col text-center"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="m-inicial">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-work'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al">
+            <tr>
+              <td>
+                <h4 class="font-weight-light">Nombre de la empresa</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6 class="colorletras">Puesto</h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colorletras">Periodo </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colorletras">Logros Obtenidos </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colorletras">Responsabilidades </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-school'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al">
+            <tr>
+              <td>
+                <h4 class="font-weight-light">Institución Academica</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6 class="colorletras">Curso</h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="colorletras">Periodo Cursado</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'epp-heads-summary'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al">
+            <tr>
+              <td>
+                <h4 class="font-weight-light">Resumen del usuario</h4>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+                <th class="font-weight-light cabeceras">{{'ppp-heads-social'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al">
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <i class="fab fa-facebook-square prefix facebook"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p> Facebook</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-twitter-square prefix twitter"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>Twitter</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-instagram prefix instagram"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>Instagram</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-snapchat-square prefix snapchat"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>Snapchat</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+                <th class="font-weight-light cabeceras">{{'portafolio'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al">
+            <div class="text-center">
+            </div>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-github-square prefix git"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>GitHub</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-behance-square prefix behance"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>Behance</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-soundcloud prefix soundcloud"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>SoundCloud</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                      <i class="fab fa-deviantart prefix deviantart"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-10">
+                      <p>deviantArt</p>
+                    </div>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-soft'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <!-- <div class="col-12"> -->
+                  <p class="text-center">Word</p>
+                  <form action="#">
+                    <p class="text-center"> 50 %</p>
+                    <mat-slider></mat-slider>
+                   </form>
+                <!-- </div> -->
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-language'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <!-- <div class="col-12"> -->
+                  <p class="text-center">Ingles</p>
+                  <form action="#">
+                    <p class="text-center"> 50 %</p>
+                    <mat-slider></mat-slider>
+                  </form>
+                <!-- </div> -->
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-hobbies'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <!-- <div class="col-12"> -->
+                  <p class="text-center">Word</p>
+                  <form action="#">
+                    <p class="text-center"> 50 %</p>
+                    <mat-slider></mat-slider>
+                   </form>
+                <!-- </div> -->
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-language'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <!-- <div class="col-12"> -->
+                  <p class="text-center">Ingles</p>
+                  <form action="#">
+                    <p class="text-center"> 50 %</p>
+                    <mat-slider></mat-slider>
+                  </form>
+                <!-- </div> -->
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{'ppp-heads-comments'|translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+               <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-12 col-12 col text-center">
+                    <img class="imgRedonda posicion-imagen" src="assets/img/pic1.jpg" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 d-none d-md-block">
+                    <h5 class="">Nombre Apellidos</h5><br>
+                    <p class="contactos ">Prueba</p>
+                    <p class="contactos ">Cambio</p>
+                  </div>
+                  <div class="col-sm-12 col-12 d-md-none">
+                    <h5 class="text-center">Nombre Apellidos</h5><br>
+                    <p class="contactos text-center">Prueba</p>
+                    <p class="contactos text-center">Cambio</p>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ultima-seccion">
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="text-center">
+          <img src="assets/img/1000x1000.png" width="200">
+          <h4>{{'ppp-picturemodal-header'|translate}}</h4>
+          <hr>
+          <label for="fileupload" class="btn btn-primary btn-outlined">{{'ppp-picturemodal-choose'|translate}}</label>
+          <input type="file" id="fileupload" #imageUpload (change)="imageUploadEvent($event)" accept="image/gif, image/jpeg, image/png" class="oculto">
+          <div class="row">
+            <div class="col-12">
+              <div *ngIf="mostrar" id="croppie-img">
+                <div>
+                  <ngx-croppie *ngIf="croppieImage" #ngxCroppie [croppieOptions]="croppieOptions" [imageUrl]="croppieImage" (result)="newImageResultFromCroppie($event)"></ngx-croppie>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-default" data-dismiss="modal" (click)="cancelCroppieEdit()">{{'general-button-cancel'|translate}}</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="saveImageFromCroppie()">{{'general-button-save'|translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

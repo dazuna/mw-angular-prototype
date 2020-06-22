@@ -1,0 +1,178 @@
+h6{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.titulo {
+  color: #999999;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.oferta {
+  background-color: #fff;
+}
+
+.headOferta {
+  background-image: url(../../../assets/img/img_perfilJ_bg.jpg);
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.letra-iconos{
+  font-size: 14px;
+}
+
+.perfilPic {
+  width: 130px;
+  height: 130px;
+}
+
+.perfilPicBorde{
+  width: 150px;
+  height: 150px;
+  margin: -4.7em 0;
+}
+.bodyOferta {
+  text-align: right;
+  padding: 1em 2em 1em 0;
+}
+.bodyOferta-2 {
+  padding: 1em 2em;
+}
+.chips{
+  padding: 0 2em 1em 2em;
+}
+.botones{
+  padding: 0 2em 2em 2em;
+}
+
+.colorOferta {
+  color: #ff6d00;
+  margin: 0;
+}
+
+.quitarMargen {
+  margin: 0;
+}
+
+
+div.hoverimagen {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  margin: auto;
+}
+
+
+div.info {
+  position:absolute;
+  overflow:hidden;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba( 77,77,77, .7);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div.hoverimagen:hover div.info {
+  opacity:1;
+}
+
+p.hovertext {
+  font-size: .7em;
+  text-align: center;
+  margin-top: 20px;
+  transition: margin-top 0.8s;
+  color: #fff;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-chip-list-wrapper{
+  border: 1px solid #4d4d4d;
+  border-radius: 11px 11px 11px 11px;
+  padding: 5px;
+}
+
+div#hoverOrganigrama {
+  background-image: url("../../../assets/img/Iconos/Orga-lineal@2x.png");
+}
+div#hoverVestimenta {
+  background-image: url("../../../assets/img/Iconos/Formal@2x.png");
+}
+div#hoverHorario {
+  background-image: url("../../../assets/img/Iconos/MedioTiempo@2x.png");
+}
+div#hoverOficina {
+  background-image: url("../../../assets/img/Iconos/Oficinalibre@2x.png");
+}
+div#hoverIdiomas {
+  background-image: url("../../../assets/img/Iconos/unsoloidioma@2x.png");
+}
+div#hoverContratacion {
+  background-image: url("../../../assets/img/Iconos/Cont-Freelance@2x.png");
+}
+div#hoverTrabajo {
+  background-image: url("../../../assets/img/Iconos/Office@2x.png");
+}
+div#hoverUbicacion {
+  background-image: url("../../../assets/img/Iconos/Viaje@2x.png");
+}
+div#hoverColaboracion {
+  background-image: url("../../../assets/img/Iconos/Grupo@2x.png");
+}
+div#hoverExperiencia {
+  background-image: url("../../../assets/img/Iconos/Experiencia6a10@2x.png");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .mb{
+    margin: 10px 0 40px 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .botones {
+    padding: 0 2em 4em 2em;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .perfilPic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .perfilPicBorde{
+    width: 100px;
+    height: 100px;
+    margin: -3em auto;
+  }
+  .ptexto{
+    margin: 2.3em 0 .8em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .botones {
+    padding: 0 2em 3.5em 2em;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .botones {
+    padding: 0 2em 4em 2em;
+  }
+}

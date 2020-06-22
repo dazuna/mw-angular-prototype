@@ -1,0 +1,205 @@
+<app-header></app-header>
+<app-tarjetas></app-tarjetas>
+<section class="alto">
+    <div class="container">
+        <div class="row justify-content-center ptitulo">
+            <h1 class="letragris">{{ 'headeru-menu-conf' | translate }}</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class=" col-lg-7 col-md-11 col-sm-12 col-12">
+                <nav class="contenido nav-horizontal text-center menu-tabs menu-horizontal tabbable">
+                    <ul class="contenido nav nav-tabs nav-horizontal_Contents altodetexto" id="myTab" role="tablist">
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link active nav-horizontal_Link texto-contenido font-weight-light" id="moneda-tab" data-toggle="tab" href="#moneda" role="tab" aria-controls="moneda" aria-selected="true">{{'ppc-money-currency'|translate}}</a>
+                        </li>
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="correos-alternativo-tab" data-toggle="tab" href="#correos-alternativo" role="tab" aria-controls="correos-alternativo" aria-selected="false">{{'correos-alternativos'|translate}}</a>
+                        </li>
+
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="cambio-contrasena-tab" data-toggle="tab" href="#cambio-contrasena" role="tab" aria-controls="cambio-contrasena" aria-selected="false">{{'cambiar-contrasena'|translate}}</a>
+                        </li>
+
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="privacidad-tab" data-toggle="tab" href="#privacidad" role="tab" aria-controls="privacidad" aria-selected="false">{{'ppc-privacy-head'|translate}}</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane show active" id="moneda" role="tabpanel" aria-labelledby="moneda-tab">
+                <table class="table">
+                    <thead class="Color-muuwho">
+                        <tr>
+                            <th class="font-weight-light cabeceras">
+                                <h3>{{'ppc-money-currency'|translate}}</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="m-al">
+                        <div class="text-center">
+                            <h4 class="ptitulo">{{'ppc-money-label'|translate}}</h4>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-5 col-sm-2 col-3 text-center icono-flecha">
+                                <i class="fas fa-money-bill-alt iconoconfiguracion"></i>
+                            </div>
+                            <div class="col-lg-5 col-md-7 col-sm-6 col-9">
+                                <mat-form-field>
+                                    <mat-select placeholder="{{'divisa'|translate}}">
+                                        <mat-option>None</mat-option>
+                                        <mat-option *ngFor="let money of money" [value]="money">{{money}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p>{{'ppc-money-note'|translate}}</p>
+                            <div class="pbtn">
+                                <button type="button" class="btn btn-outline-primary color-muuwho">{{'general-button-accept' | translate}}</button>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+                <!-- </div> -->
+            </div>
+
+            <div class="tab-pane " id="correos-alternativo" role="tabpanel" aria-labelledby="correos-alternativo-tab">
+                <div class="row container_div">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table id="dv" class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'correos-alternativos'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                                <div class="text-center">
+                                    <h4 class="ptitulo">{{'correos-dados-alta'|translate}}:</h4>
+                                    <ul>
+                                        <li type="disc">dep-op2@muuwho.com</li>
+                                        <li type="disc">dep-op2@gmail.com</li>
+                                        <li type="disc">dep-op2@hotmail.com</li>
+                                        <li type="disc">dep-op2@yahoo.com</li>
+                                    </ul>
+                                </div>
+
+                                <tr>
+                                    <td class="text-center">
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-5 col-md-5 col-sm-2 col-3 icono-flecha">
+                                                <i class="fas fa-user-tie prefix iconoconfiguracion"></i>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-6 col-9">
+                                                <mat-form-field class="formizquierdo">
+                                                    <input matInput placeholder="{{'publish-bill-email'|translate}}">
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn btn-outline-primary color-muuwho">{{'agregar-nuevo'|translate}}</button>
+
+                                        <div class="pbtn">
+                                          <p>{{'correos-recuperar'|translate}}</p>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="tab-pane" id="cambio-contrasena" role="tabpanel" aria-labelledby="cambio-contrasena-tab">
+                <div class="row contenido-experiencia">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table id="tabla-experiencia" class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'cambio-contrasena'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                                <div class="text-center">
+                                    <h4 class="ptitulo">{{'index-registro-contrasena'|translate}}:</h4>
+                                </div>
+                                <!-- <form class="form-inline"> -->
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-3 col-3 icono-flecha">
+                                        <i class="fas fa-lock prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-9 col-9">
+                                        <mat-form-field>
+                                            <input matInput placeholder="{{'contrasena-actual'|translate}}" [type]="hide ? 'password' : 'text'">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-3 col-3 icono-flecha">
+                                        <i class="fas fa-lock-open prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-9 col-9">
+                                        <mat-form-field>
+                                            <input matInput placeholder="{{'ingresar-nueva-contrasena'|translate}}" [type]="hide ? 'password' : 'text'">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-3 col-3 icono-flecha">
+                                        <i class="fas fa-lock-open prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-9 col-9">
+                                        <mat-form-field>
+                                            <input matInput placeholder="Confirmar nueva contraseña" [type]="hide ? 'password' : 'text'">
+                                        </mat-form-field>
+                                    </div>
+                                </div> -->
+                                <div class="text-center pbtn">
+                                    <button type="button" class="btn btn-outline-primary color-muuwho">{{'general-button-accept'|translate}}</button>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="privacidad" role="tabpanel" aria-labelledby="privacidad-tab">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'ppc-privacy-head'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                                PRUEBA
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

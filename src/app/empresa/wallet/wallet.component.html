@@ -1,0 +1,167 @@
+<app-header-emp></app-header-emp>
+<app-tarjetas-emp></app-tarjetas-emp>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+        <h2>Wallet</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+     <div class="row fondo">
+       <div class="col-lg-5 col-md-3 col-sm-4 col-3 contenido example-right-align">
+         <a data-toggle="modal" data-target="#share"> <i class="fas fa-plus-circle flecha"></i> </a>
+       </div>
+       <div class="col-lg-5 col-md-6 col-sm-8 col-9 contenido text-center">
+         <p class=""> $ <span>10.00</span> USD </p>
+       </div>
+     </div>
+
+   </div>
+</section>
+
+<section class="p-seccion2">
+  <div class="container">
+    <div class="row fondo">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+          <img src="https://s3.amazonaws.com/muuwho-images/ProfileImages/soldier76@ow.com/soldier76@ow.com.png" class="picture" width="20">
+          <h5>Nombre Apellido</h5>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+        <h5 class="font-weight-bold padding-user">{{'usado'|translate}}</h5>
+        <p class="num-uso">$ 50.<sup>00</sup></p>
+
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+        <h5 class="font-weight-bold padding-user">{{'en-wallet'|translate}}</h5>
+        <p class="num-uso">$ 50.<sup class="m-sup">00</sup> <i class="fas fa-pencil-alt flecha" data-toggle="modal" data-target="#editarwallet"></i></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 btnPerfil">
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block regresar" routerLink="/perfil-empresa">{{'volver-perfil'|translate}} <i class="fas fa-arrow-circle-left"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- modal editar wallet -->
+<div class="modal fade" id="editarwallet" tabindex="-1" role="dialog" aria-labelledby="editarwalletLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header orangeHeader">
+        <h6 class="modal-title" id="exampleModalLabel">{{"wallet-subuser-add"|translate}}</h6>
+        <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="text-center">{{'wallet-subuser-assign'|translate}}</h3>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+            <img class="text-center" src="assets/img/1000x1000.png" width="150">
+          </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+              <mat-form-field>
+                <input matInput placeholder="{{'cantidad'|translate}}" type="number" class="example-right-align">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+            <button type="button" class="btn btn-outline-primary sumar" data-dismiss="modal">{{'sumar'|translate}}</button>
+
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+            <button type="button" class="btn btn-outline-secondary restar" data-dismiss="modal">{{'restar'|translate}}</button>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--modal de wallet-->
+<section>
+  <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="container">
+      <div class="modal-dialog modal-lg">
+        <div class="row">
+          <div class="modal-content">
+            <div class="modal-header orangeHeader">
+              <h4 class="titleModal list-inline">Wallet</h4>
+              <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times-circle"></i></button>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h4 class="text-center">{{'publish-modal-paymentalt'|translate}}</h4>
+              </div>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-6 col-12 text-center">
+                  <h6>{{'publish-modal-money'|translate}}</h6>
+                  <p class="actualmente-wallet"> $ <span id="popupcantidad" class="font-weight-bold"> 0.00 </span> USD </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-md-6 col-12 text-center">
+                  <button type="button" class="btn btn-outline-primary btn-lg btn-block facturacion" data-dismiss="modal" routerLink="/facturacion"> {{'publish-bill-btn'|translate}} </button>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-12 col-12 text-center">
+                  <mat-form-field>
+                    <input matInput placeholder="{{'mi'|translate}} wallet:" type="number" class="example-right-align">
+                    <span matPrefix>$&nbsp;</span>
+                    <span matSuffix>.00</span>
+                  </mat-form-field>
+                  <label class="pUSD">USD</label>
+                  <p>
+                    <label class="pUSD">IVA :</label>
+                    <label>$0.00 USD</label>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <button type="button" class="btn btn-outline-primary btn-lg btn-block paypal">{{'pagar-paypal'|translate}} <i class="fab fa-paypal icono-paypal"></i></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                  <p><small>{{'forma-rapida'|translate}}.</small></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer-emp></app-footer-emp>

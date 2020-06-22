@@ -1,0 +1,379 @@
+<app-header-emp></app-header-emp>
+<app-tarjetas-emp></app-tarjetas-emp>
+<section class="alto">
+    <div class="container">
+        <div class="row justify-content-center ptitulo">
+            <h1 class="letragris text-center">{{'eadmin-head-lbl'|translate}}</h1>
+        </div>
+
+        <div class="row">
+            <div class=" col-lg-5 col-md-7 col-sm-12 col-12">
+                <nav class="contenido nav-horizontal text-center menu-tabs menu-horizontal tabbable">
+                    <ul class="contenido nav nav-tabs nav-horizontal_Contents altodetexto" id="myTab" role="tablist">
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link active nav-horizontal_Link texto-contenido font-weight-light" id="moneda-tab" data-toggle="tab" href="#moneda" role="tab" aria-controls="moneda" aria-selected="true">{{'eadmin-btn-users'|translate}}</a>
+                        </li>
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="correos-alternativo-tab" data-toggle="tab" href="#correos-alternativo" role="tab" aria-controls="correos-alternativo" aria-selected="false">{{'grupo'|translate}}</a>
+                        </li>
+
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="cambio-contrasena-tab" data-toggle="tab" href="#cambio-contrasena" role="tab" aria-controls="cambio-contrasena" aria-selected="false">{{'index-registro-contrasena'|translate}}</a>
+                        </li>
+
+                        <li class="contenido nav-item nav-horizontal_Link">
+                            <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="privacidad-tab" data-toggle="tab" href="#privacidad" role="tab" aria-controls="privacidad" aria-selected="false">{{'ppc-privacy-head'|translate}}</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="offset-lg-3 col-lg-4 col-md-4 col-sm-12 col-12">
+              <mat-form-field class="w100">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="{{'buscador'|translate}}">
+                <i class="fa fa-search prefix iconoconfiguracion" aria-hidden="true"></i>
+              </mat-form-field>
+            </div>
+
+
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane show active table-responsive" id="moneda" role="tabpanel" aria-labelledby="moneda-tab">
+              <table class="table">
+                    <thead class="Color-muuwho">
+                        <tr>
+                            <th class="font-weight-light cabeceras">
+                                <h3>{{'eadmin-btn-users'|translate}}</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="m-al">
+                      <div class="mat-elevation-z8">
+                         <table mat-table [dataSource]="dataSource" class="w100" matSort>
+
+                           <!-- ID Column -->
+                           <ng-container matColumnDef="id">
+                             <th mat-header-cell *matHeaderCellDef mat-sort-header> Reclutador </th>
+                             <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+                           </ng-container>
+
+                           <!-- Progress Column -->
+                           <ng-container matColumnDef="progress">
+                             <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha de alta </th>
+                             <td mat-cell *matCellDef="let row"> {{fecha}} </td>
+                           </ng-container>
+
+                           <!-- Name Column -->
+                           <ng-container matColumnDef="name">
+                             <th mat-header-cell *matHeaderCellDef mat-sort-header> Progreso de registro </th>
+                             <td mat-cell *matCellDef="let row"> {{row.progress}}% </td>
+                           </ng-container>
+
+                           <ng-container matColumnDef="permisos" class="d-none d-md-block">
+                             <th mat-header-cell *matHeaderCellDef mat-sort-header> Permisos usuario </th>
+                             <td mat-cell *matCellDef="let row"> {{row.permisos}} </td>
+                           </ng-container>
+
+                           <!-- Color Column -->
+                           <ng-container matColumnDef="color">
+                             <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+                             <td mat-cell *matCellDef="let row" class="text-center" [style.color]="row.color"> <img class="imgRedonda posicion-imagen" src="assets/img/profiledefault.png" alt="">  </td>
+                           </ng-container>
+
+                           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                           <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                           </tr>
+                         </table>
+
+                         <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                         </div>
+
+
+
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-user text-center">
+                          <button type="button" class="btn btn-outline-primary btn-lg btn-block facturacion" data-toggle="modal" data-target="#anadir-usuario"> <i class="fas fa-user-plus"></i> {{'anadir-usuario'|translate}} </button>
+                        </div>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="anadir-usuario" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">{{'anade-reclutadores'|translate}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                      <img src="assets/img/1000x1000.png" width="150">
+                    </div>
+
+                    <form>
+                      <mat-form-field class="w100">
+                        <input matInput placeholder="{{'publish-bill-name'|translate}}">
+                      </mat-form-field>
+
+                        <mat-form-field class="w100">
+                            <input matInput placeholder="{{'publish-bill-email'|translate}}" [formControl]="emailFormControl">
+                            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                            {{'correo-valido'|translate}}
+                            </mat-error>
+                            <mat-error *ngIf="emailFormControl.hasError('required')">
+                            {{'es-requerido'|translate}}
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="w100">
+                            <input matInput placeholder="{{'index-registro-contrasena'|translate}}" [type]="hide ? 'password' : 'text'">
+                            <i class="fas fa-lock prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                        </mat-form-field>
+
+                    </form>
+
+                  </div>
+
+                  <div class="modal-footer">
+
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                        <button type="button" class="btn btn-outline-primary cerrar" data-dismiss="modal">{{'general-button-cancel'|translate}}</button>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                        <button type="button" class="btn btn-outline-primary guardar">{{'general-button-save'|translate}}</button>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin modal/// -->
+
+
+            <div class="tab-pane " id="correos-alternativo" role="tabpanel" aria-labelledby="correos-alternativo-tab">
+                <div class="row container_div">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table id="dv" class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'administrador-grupo'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                              <div class="row">
+                                <div class=" col-lg-3 col-md-5 offset-sm-3 col-sm-6 col-12">
+                                    <nav class="contenido nav-horizontal menu-tabs menu-horizontal tabbable">
+
+                                        <ul class="contenido nav nav-tabs nav-horizontal_Contents altodetexto" id="myTab" role="tablist">
+
+                                            <li class="contenido nav-item nav-horizontal_Link">
+                                                <a class="contenido nav-link active nav-horizontal_Link texto-contenido font-weight-light" id="administradores-tab" data-toggle="tab" href="#administradores" role="tab" aria-controls="administradores" aria-selected="true">{{'administrador'|translate}}</a>
+                                            </li>
+
+                                            <li class="contenido nav-item nav-horizontal_Link">
+                                                <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="miembros-tab" data-toggle="tab" href="#miembros" role="tab" aria-controls="miembros" aria-selected="false">{{'miembros'|translate}}</a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="offset-lg-6 col-lg-3 offset-md-3 col-md-4 col-sm-12 col-12">
+
+                                  <mat-form-field class="w100">
+                                    <mat-select>
+                                      <mat-option>None</mat-option>
+                                      <mat-option value="option1">Option 1</mat-option>
+                                      <mat-option value="option2">Option 2</mat-option>
+                                      <mat-option value="option3">Option 3</mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+
+                                </div>
+
+                              </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane show active" id="administradores" role="tabpanel" aria-labelledby="administradores-tab">
+                                      <h2 class="text-center">{{'administrador'|translate}}</h2>
+
+
+
+                                         <div class="mat-elevation-z8">
+                                            <table mat-table [dataSource]="dataSource" class="w100" matSort>
+
+                                              <!-- ID Column -->
+                                              <ng-container matColumnDef="id">
+
+                                                <th mat-header-cell *matHeaderCellDef mat-sort-header> Reclutador </th>
+
+                                                <td mat-cell *matCellDef="let row">
+                                                                    <mat-radio-button class="example-margin" value="after"> {{row.name}} </mat-radio-button>
+                                                                </td>
+                                              </ng-container>
+
+                                              <!-- Progress Column -->
+                                              <ng-container matColumnDef="correo">
+                                                <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha de alta </th>
+                                                <td mat-cell *matCellDef="let row"> {{row.correo}} </td>
+                                              </ng-container>
+
+
+
+                                              <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                                              <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
+                                              </tr>
+                                            </table>
+
+                                            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                                            </div>
+
+                                        <div class="row pbotones">
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                                            <button type="button" class="btn btn-outline-primary agregar">{{'agregar'|translate}}</button>
+                                          </div>
+
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                                            <button type="button" class="btn btn-outline-primary eliminar">{{'general-button-delete'|translate}}</button>
+                                          </div>
+                                        </div>
+
+                                  </div>
+
+                                  <div class="tab-pane" id="miembros" role="tabpanel" aria-labelledby="miembros-tab">
+                                    <h2 class="text-center">{{'miembros'|translate}}</h2>
+
+                                    <div class="mat-elevation-z8">
+                                       <table mat-table [dataSource]="dataSource" class="w100" matSort>
+
+                                         <!-- ID Column -->
+                                         <ng-container matColumnDef="id">
+                                           <th mat-header-cell *matHeaderCellDef mat-sort-header> Reclutador </th>
+                                           <td mat-cell *matCellDef="let row">
+                                             <mat-checkbox class="example-margin" >{{row.name}}</mat-checkbox>  
+                                           </td>
+                                         </ng-container>
+
+                                         <!-- Progress Column -->
+                                         <ng-container matColumnDef="correo">
+                                           <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha de alta </th>
+                                           <td mat-cell *matCellDef="let row"> {{row.correo}} </td>
+                                         </ng-container>
+
+
+
+                                         <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                                         <tr mat-row *matRowDef="let row; columns: displayedColumns2;">
+                                         </tr>
+                                       </table>
+
+                                       <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                                       </div>
+
+                                       <div class="row pbotones">
+                                         <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                                          <button type="button" class="btn btn-outline-primary agregar">{{'agregar'|translate}}</button>
+                                         </div>
+
+                                         <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+                                           <button type="button" class="btn btn-outline-primary eliminar">{{'general-button-delete'|translate}}</button>
+                                         </div>
+                                       </div>
+
+                                  </div>
+
+                                </div>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="tab-pane" id="cambio-contrasena" role="tabpanel" aria-labelledby="cambio-contrasena-tab">
+                <div class="row contenido-experiencia">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table id="tabla-experiencia" class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'cambio-contrasena'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                                <div class="text-center">
+                                    <h4 class="ptitulo">{{'index-registro-contrasena'|translate}}:</h4>
+                                </div>
+                                <!-- <form class="form-inline"> -->
+
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                                        <mat-form-field>
+                                            <i class="fas fa-lock prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                                            <input matInput placeholder="{{'contrasena-actual' | translate}}" [type]="hide ? 'password' : 'text'">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+
+                                        <mat-form-field>
+                                            <i class="fas fa-lock prefix iconoconfiguracion candados" matSuffix (click)="hide = !hide"></i>
+                                            <input matInput placeholder="{{'nueva-contrasena' | translate}}" [type]="hide ? 'password' : 'text'">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+
+                                <div class="text-center pbtn">
+                                    <button type="button" class="btn btn-outline-primary color-muuwho">{{'general-button-accept'|translate}}</button>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="privacidad" role="tabpanel" aria-labelledby="privacidad-tab">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <table class="table">
+                            <thead class="Color-muuwho">
+                                <tr>
+                                    <th class="font-weight-light cabeceras">
+                                        <h3>{{'ppc-privacy-head'|translate}}</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="m-al">
+                                PRUEBA
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<app-footer-emp></app-footer-emp>

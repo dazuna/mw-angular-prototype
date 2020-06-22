@@ -1,0 +1,143 @@
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.mat-form-field{
+  width: 75%;
+}
+
+.borde-oferta{
+  border-right: 1px solid #4d4d4d;
+}
+
+.icono{
+  font-size: 25px;
+  color: #ff6d00;
+}
+.titulo {
+    text-align: center;
+    color: #999999;
+    font-size: 2rem;
+}
+
+.w100 {
+    width: 100%;
+}
+.icolor{
+    color: #ff6d00;
+    line-height: 50px;
+    font-size: 22px;
+  }
+
+  .btnOferta {
+      text-align: right;
+  }
+  .row {
+      margin-top: 2em;
+  }
+
+  .pb{
+    padding-bottom: 10px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.color-hea-modal{
+  background-color: #ff6d00;
+  color: #fff;
+}
+.close{
+  color: #fff;
+}
+.close:not(:disabled):not(.disabled):hover {
+    color: #fff;
+}
+
+.cantidadHitch {
+    font-size: 1.5em;
+    color: #ff6d00;
+    padding-left: .3em;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+}
+
+.datos {
+    padding-left: .3em;
+    padding-bottom: .6em;
+}
+
+.contorno {
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.btnPerfil {
+    padding: 1em;
+}
+
+.iconoMisOfertas {
+    color: #bebebe;
+    padding-left: .2em;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 331px) {
+  h3{
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .btnOferta {
+      text-align:center;
+  }
+  .borde-oferta{
+    border-right: 0;
+  }
+  .btnVer {
+    float: none;
+    text-align: center;
+  }
+  .btnPerfil {
+    padding: 0 0 60px 0;
+  }
+  .cantidadHitch{
+    color: #4d4d4d;
+  }
+  .icono{
+    font-size: 25px;
+    color: #4d4d4d;
+  }
+  .icolor{
+    color: #4d4d4d;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btnPerfil {
+    padding: 0 0 50px 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .btnPerfil {
+    padding: 0 0 60px 0;
+  }
+}

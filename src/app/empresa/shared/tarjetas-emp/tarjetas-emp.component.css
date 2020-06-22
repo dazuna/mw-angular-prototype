@@ -1,0 +1,158 @@
+.fondoseccion{
+  background-color: #f2f2f2;
+}
+.iconosrec{
+  padding: 5px 0px;
+  font-size: 20px;
+  margin: 0 -5px;
+}
+.ptt{
+  padding: 10px 0;
+}
+h4{
+  padding: 0 10px;
+}
+.rectangulo {
+    width: 17rem;
+    height: 40px;
+    border: 3px solid #c3c3c3;
+    background: #ec762c;
+    color:#fff;
+    cursor: pointer;
+  }
+.rectangulo2 {
+    width: 17rem;
+    height: 40px;
+    border: 3px solid #c3c3c3;
+    background: #f09635;
+    color:#fff;
+    cursor: pointer;
+  }
+.rectangulo3 {
+    width: 17rem;
+    height: 40px;
+    border: 3px solid #c3c3c3;
+    background: #f4ad55;
+    color:#fff;
+    cursor: pointer;
+  }
+.rectangulo4 {
+    width: 17rem;
+    height: 40px;
+    border: 3px solid #c3c3c3;
+    background: #f6c542;
+    color:#fff;
+    cursor: pointer;
+  }
+  .iconos-muuwho{
+    font-size: 38px;
+    line-height: .7;
+    margin: 0 -5px;
+    }
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 599px) {
+
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .iconosrec {
+      margin: 0 -20px;
+    }
+    .rectangulo {
+        width: 8.5rem;
+
+      }
+    .rectangulo2 {
+        width: 8.5rem;
+
+      }
+    .rectangulo3 {
+        width: 8.5rem;
+
+      }
+    .rectangulo4 {
+        width: 8.5rem;
+      }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .iconosrec {
+      margin: 0 -20px;
+    }
+    .rectangulo {
+        width: 10.5rem;
+
+      }
+    .rectangulo2 {
+        width: 10.5rem;
+
+      }
+    .rectangulo3 {
+        width: 10.5rem;
+
+      }
+    .rectangulo4 {
+        width: 10.5rem;
+      }
+    h3{
+      font-size: 1.5rem;
+    }
+
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .iconosrec {
+      margin: 0 -15px;
+    }
+    .rectangulo {
+        width: 13.5rem;
+
+      }
+    .rectangulo2 {
+        width: 13.5rem;
+
+      }
+    .rectangulo3 {
+        width: 13.5rem;
+
+      }
+    .rectangulo4 {
+        width: 13.5rem;
+
+      }
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .iconosrec {
+      margin: 0 -15px;
+    }
+    .rectangulo {
+        width: 13.5rem;
+
+      }
+    .rectangulo2 {
+        width: 13.5rem;
+
+      }
+    .rectangulo3 {
+        width: 13.5rem;
+
+      }
+    .rectangulo4 {
+        width: 13.5rem;
+
+      }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1366px) {
+
+  }
+
+  @media only screen and (min-width: 1367px) and (max-width: 1920px) {
+
+  }
+
+  @media only screen and (min-width: 1921px) {
+
+  }

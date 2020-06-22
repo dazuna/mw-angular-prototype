@@ -1,0 +1,142 @@
+h2{
+  padding: 15px 0;
+  color: #999999;
+}
+.actualmente-wallet{
+  font-size: 30px;
+}
+.fondo{
+  background-color: #fff;
+  border: 1px solid #333;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.flecha{
+  color: #ff6d00;
+}
+.num-uso{
+  font-size: 30px;
+  color: #ff6d00;
+}
+
+.btnPerfil {
+    padding: 1em 0 1rem 0;
+}
+
+.m-sup{
+  margin: 0 15px 0 0;
+}
+.padding-user{
+  padding: 15px 0 5px 0;
+}
+.contenido {
+  padding: 100px 0;
+  font-size: 50px;
+  color: #666666;
+}
+.width100{
+  width: 100%!important;
+}
+.icono-paypal{
+  color: #013186 !important;
+}
+
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.mat-form-field{
+  width: 50%;
+}
+
+.pUSD{
+  padding: 0 5px;
+}
+
+.alto {
+    min-height: 20.2rem;
+}
+
+.titulo {
+    color: #999999;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.cantidadWallet {
+    text-align: center;
+    display: block;
+}
+
+.inputWallet {
+    text-align: center;
+    display: block;
+}
+
+.orangeHeader {
+    background: #FF6D00;
+    height: 3.7em;
+    color: #FFFFFF;
+}
+
+.modal-header .close {
+    margin: -1rem 0rem 0rem 0em;
+    color: #fff;
+}
+.p-seccion2{
+  padding: 10px 0 0 0;
+}
+.picture {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .flecha{
+    color: #4d4d4d;
+  }
+  .num-uso{
+    color: #4d4d4d;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  h6{
+    font-size: .8em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 416px) {
+  .contenido {
+    font-size: 30px;
+
+  }
+  .fas {
+    font-size: 35px;
+  }
+  .alto {
+      min-height: 13.2rem;
+  }
+  .fa-arrow-circle-left{
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 416px) {
+  .contenido{
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .btnPerfil {
+      padding: 1em 0 3.5em 0;
+  }
+}

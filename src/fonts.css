@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Raleway;
+    src: url('../src/assets/fonts/Raleway/Raleway-Regular.ttf');   
+}
+
+body {
+  font-family: 'Raleway',sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #666;
+  background-color: #f2f2f2;
+}

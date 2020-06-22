@@ -1,0 +1,426 @@
+<app-header-emp></app-header-emp>
+<app-tarjetas-emp></app-tarjetas-emp>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <h2 class="text-center titulo">- Nombre de la vacante -</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <h4 class="text-center p-botones">{{'ecandidates-btn-hired'|translate}}: <span>5</span></h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <h4 class="text-center p-botones">{{'ecandidates-bth-hire'|translate}}: <span>0</span></h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="row">
+
+            <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+              <mat-form-field>
+                <input matInput placeholder="{{'que-oferta'|translate}}">
+              </mat-form-field>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+              <i class="fa fa-search lupa" aria-hidden="true"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8 col-md-11 col-sm-12 col-12">
+              <nav class="contenido nav-horizontal text-center menu-tabs menu-horizontal tabbable">
+                  <ul class="contenido nav nav-tabs nav-horizontal_Contents altodetexto" id="myTab" role="tablist">
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link active nav-horizontal_Link texto-contenido font-weight-light" id="filtro-tab" data-toggle="tab" href="#filtro" role="tab" aria-controls="filtro" aria-selected="true">{{'ecandidates-filter-1'|translate}}</a>
+                      </li>
+
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="telefono-tab" data-toggle="tab" href="#telefono" role="tab" aria-controls="telefono" aria-selected="false">{{'ecandidates-filter-2'|translate}}</a>
+                      </li>
+
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="presencial-tab" data-toggle="tab" href="#presencial" role="tab" aria-controls="presencial" aria-selected="false">{{'ecandidates-filter-3'|translate}}</a>
+                      </li>
+
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="finalista-tab" data-toggle="tab" href="#finalista" role="tab" aria-controls="finalista" aria-selected="false">{{'ecandidates-filter-4'|translate}}</a>
+                      </li>
+
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="contratados-tab" data-toggle="tab" href="#contratados" role="tab" aria-controls="contratados" aria-selected="false">{{'ecandidates-filter-5'|translate}}</a>
+                      </li>
+                      <li class="contenido nav-item nav-horizontal_Link">
+                          <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="rechazados-tab" data-toggle="tab" href="#rechazados" role="tab" aria-controls="rechazados" aria-selected="false">{{'ecandidates-filter-6'|translate}}</a>
+                      </li>
+
+                  </ul>
+              </nav>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="p-seccion">
+  <div class="container">
+    <div class="tab-content">
+
+      <div class="tab-pane show active" id="filtro" role="tabpanel" aria-labelledby="filtro-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p class="">{{'finalista'|translate}}: 1/5</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary regresar">{{'regresar'|translate}} <i class="fas fa-arrow-alt-circle-left"></i></button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary avanzar">{{'avanzar'|translate}} <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary rechazar">{{'rechazar'|translate}} <i class="fas fa-ban"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane show" id="telefono" role="tabpanel" aria-labelledby="telefono-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p class="">{{'finalista'|translate}}: 2/5</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary regresar">{{'regresar'|translate}} <i class="fas fa-arrow-alt-circle-left"></i></button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary avanzar">{{'avanzar'|translate}} <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary rechazar">{{'rechazar'|translate}} <i class="fas fa-ban"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane show" id="presencial" role="tabpanel" aria-labelledby="presencial-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p class="">{{'finalista'|translate}}: 3/5</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary regresar">{{'regresar'|translate}} <i class="fas fa-arrow-alt-circle-left"></i></button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary avanzar">{{'avanzar'|translate}} <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary rechazar">{{'rechazar'|translate}} <i class="fas fa-ban"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane show" id="finalista" role="tabpanel" aria-labelledby="finalista-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p class="">{{'finalista'|translate}}: 4/5</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary regresar">{{'regresar'|translate}} <i class="fas fa-arrow-alt-circle-left"></i></button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 p-botones">
+                  <button class="btn btn-outline-primary avanzar">{{'avanzar'|translate}} <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary rechazar">{{'rechazar'|translate}} <i class="fas fa-ban"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane show" id="contratados" role="tabpanel" aria-labelledby="contratados-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p>{{'finalista'|translate}}: 5/5</p>
+                <p class="">{{'candidato'|translate}}: ¡Contratado!</p>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary rechazar" routerLink="/perfil-usuario">{{'stats-profile-head'|translate}} <i class="fas fa-user-circle"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane show" id="rechazados" role="tabpanel" aria-labelledby="rechazados-tab">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">{{'ecandidates-modal-head'|translate}}</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold flecha" data-toggle="modal" data-target="#cambioOferta">Nombre Apellido</h6>
+                <p>correo@recomendado.com</p>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                <h4 class="p-titulo">Hitcher</h4>
+                <img class="img-vacante" src="assets/img/profiledefault.png" alt="">
+                <h6 class="p-botones font-weight-bold">correo@recomendado.com</h6>
+
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio5">★</label>
+                </p>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 text-center">
+                <h3 class="p-titulo">{{'fase'|translate}}</h3>
+                <p class="">{{'rechazado'|translate}} : {{'regresar-activo'|translate}}</p>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-botones-rechazar">
+                  <button class="btn btn-outline-primary incorporar">{{'reincorporar'|translate}} <i class="fas fa-undo-alt"></i></button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 center btnPerfil">
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block r-p" routerLink="/perfil-empresa">{{'volver-perfil'|translate}} <i class="fas fa-arrow-circle-left"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <!-- Inicio modal -->
+  <div class="modal fade" id="cambioOferta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="container">
+      <div class="row">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header color-hea-modal">
+              <h4>¡{{'ecandidates-modal-head'|translate}}!</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                  <img class="img-vacante" src="assets/img/profiledefault.png" alt="30%">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                  <h3 class="font-weight-bold">Datos generales.</h3>
+                  <h4>Nombre Apellido</h4>
+                  <p class="font-weight-bold">Correo: <span class="font-weight-light"> correo@correo.com</span></p>
+                  <p class="font-weight-bold">Telefono: <span class="font-weight-light"> 55 5555 5555</span></p>
+
+                  <h3>Formación Academica.</h3>
+                  <p class="font-weight-bold">Escuela: <span class="font-weight-light"> Escuela</span></p>
+                  <p class="font-weight-bold">Programa: <span class="font-weight-light"> Programa</span></p>
+                  <p class="font-weight-bold">Periodo: <span class="font-weight-light"> 1900/01/01 - 1905/01/01 </span></p>
+
+                  <h3>Experiencia laboral.</h3>
+                  <p class="font-weight-bold">Compañia: <span class="font-weight-light"> Nombre compañia</span></p>
+                  <p class="font-weight-bold">Puesto: <span class="font-weight-light"> Cargo</span></p>
+                  <p class="font-weight-bold">Periodo: <span class="font-weight-light"> 1900/01/01 - 1905/01/01 </span></p>
+                  <p class="font-weight-bold">Logros: <span class="font-weight-light"> Logros </span></p>
+                  <p class="font-weight-bold">Resposabilidades: <span class="font-weight-light"> Responsabilidades</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+              <button class="btn btn-outline-primary cerrar" data-dismiss="modal" aria-label="Close">Cerrar <i class="fas fa-times-circle"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Fin modal -->
+</section>
+
+<app-footer-emp></app-footer-emp>

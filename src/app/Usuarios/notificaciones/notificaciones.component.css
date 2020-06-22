@@ -1,0 +1,84 @@
+.nav {
+    background-color: #cccccc;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #fc6d00;
+    color: #fff !important;
+}
+
+a{
+  color: #333;
+}
+
+nav ul a:hover {
+    background-color: #fc6d00 ;
+    color: #fff;
+}
+
+.tabbable .nav-tabs {
+   overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+}
+.pmenu{
+  padding: 0 0 15px 0;
+}
+.nav-link {
+  padding: .5rem 1.24rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .nav-link {
+    padding: .5rem 1.28rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .nav-link {
+    padding: .5rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  td, th {
+    padding: .5rem;
+  }
+
+  th {
+    /* text-align: left; */
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: none;
+  }
+
+  td {
+    white-space: nowrap;
+    border-bottom: none;
+  }
+
+  td:first-of-type, th:first-of-type {
+    border-left: none;
+  }
+
+  td:last-of-type, th:last-of-type {
+    border-right: none;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+      background-color: #4d4d4d;
+  }
+  nav ul a:hover {
+      background-color: #4d4d4d;
+  }
+}

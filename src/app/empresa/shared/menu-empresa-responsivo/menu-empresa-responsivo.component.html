@@ -1,0 +1,76 @@
+<app-header-emp></app-header-emp>
+  <div class="container">
+    <div class="row">
+      <div class=" col-sm-10 col-10">
+        <mat-form-field>
+          <input matInput placeholder="{{'buscador'|translate}}">
+        </mat-form-field>
+      </div>
+      <div class="col-sm-2 col-2">
+        <i routerLink="" class="fa fa-search icono-menu-r"></i>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 col-2">
+        <img class="imgRedonda posicion-imagen flecha" routerLink="/perfil-empresa" src="assets/img/profiledefault.png" alt="">
+      </div>
+      <div routerLink="/perfil-empresa" class="col-sm-10 col-10">
+        <h3>Nombre de la empresa</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 col-2 text-center">
+        <i class="fas fa-industry"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6 routerLink="/perfil-empresa">{{'perfil'|translate}}</h6>
+      </div>
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="fas fa-bullhorn"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6 routerLink="/publicar-oferta-empresa">{{'publicar-oferta'|translate}}</h6>
+      </div>
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div class="col-sm-10 col-10">
+        <h6 routerLink="/estadisticas-empresa">{{'estadisticas'|translate}}</h6>
+      </div>
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="far fa-comments"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6 routerLink="/reporte-empresa">{{'contactanos'|translate}}</h6>
+      </div>
+
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="fas fa-user-friends"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6 routerLink="/administrador-empresa">{{'eadmin-head-lbl'|translate}}</h6>
+      </div>
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="far fa-question-circle"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6 routerLink="/ayuda-empresa">{{'footer-faq-label'|translate}}</h6>
+      </div>
+
+      <div class="col-sm-2 col-2 text-center">
+        <i class="far fa-times-circle"></i>
+      </div>
+      <div class=" col-sm-10 col-10">
+        <h6>{{'headeru-menu-logout'|translate}}</h6>
+      </div>
+    </div>
+
+  </div>
+<app-footer-emp></app-footer-emp>

@@ -1,0 +1,1021 @@
+/* videos */
+.mtbotones{
+  margin-top: 10px;
+}
+.color-blanco{
+  color: #fff;
+  font-size: 30px;
+  padding: 7px 3px 0px 3px;
+}
+
+.contorno-blanco{
+   width: 50px;
+   height: 50px;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   background: #000;
+   border: 1px solid #fff;
+}
+.alto-modal{
+  height: 75vh;
+}
+
+.borde-inferior{
+  border-bottom: 0;
+}
+.close{
+  font-size: 30px;
+}
+.borde-superior{
+  border-top:  0;
+}
+
+.btn-video {
+    outline: none;
+    border-radius: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    position: absolute;
+}
+
+.btn-video, .video-x {
+    height: 100%;
+    width: 100%;
+}
+
+
+.fondo-negro{
+  background: #000!important;
+}
+
+.video-normal{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* clases que se utilizan en el index */
+.btn-facebook{
+  color: #fff;
+  background-color: #4267b2;
+}
+.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active,{
+  color: #fff;
+  background-color: #4267b2 !important;
+}
+
+.btn-gmail{
+  color: #fff;
+  background-color: #df4a32;
+}
+
+.btn-gmail:hover, .btn-gmail:focus, .btn-gmail:active,{
+  color: #fff;
+  background-color: #df4a32 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
+  background: #ff6d00;
+}
+
+.esconder {
+	display: none;
+	transition: margin-top 0.8s;
+}
+
+.modal-header{
+  background-color: #ff6d00;
+  color: #fff;
+}
+.close{
+  color: #fff;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+  color: #fff;
+}
+.icono-muuwho{
+  color:#ff6d00;
+}
+.letra-original{
+  color: #333!important;
+}
+
+.pdbtn-lg{
+  padding: 0 0 15px 25px;
+}
+
+.pdbtn{
+    padding: 20px 0px;
+}
+.titulo{
+  padding: 15px 0;
+}
+.titulo-registro{
+  padding: 15px 0;
+}
+
+.fondo{
+    background-color: #ff6d00;
+    color: #fff;
+}
+.mat-form-field{
+  width: 100%;
+  color: #fff;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: rgba(255,255,255,255) !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgba(255,255,255,255) !important;
+}
+
+.btn-primary{
+  background-color: #ff6d00;
+  border-color: #fff;
+}
+primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    border-color: #fff;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(255,255,255,255);
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(252, 252, 252, 0.5);
+}
+
+.empleorelevante{
+  border: 2px solid #fc6d00;
+  padding: 5px 10px;
+}
+
+.fondoletra{
+  margin-top: 55px;
+  background-color: rgba( 169, 164, 162, .5);
+  float: right;
+}
+.fondobotones{
+  background-color: rgba( 169, 164, 162, .5);
+  padding: 10px 0;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.element-propuesta {
+  border: 2px solid #fc6d00;
+  text-align: center;
+}
+
+.element-propuesta-left {
+  border-left: 2px solid #fc6d00;
+}
+
+.imgprincipal{
+  width: 100%;
+  height:13em;
+  align-content:center;
+  object-fit: cover
+}
+.pb10{
+  padding-bottom: 10px;
+}
+
+.text-primera {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.42857143;
+  color: #fff;
+}
+.texto-segunda {
+    margin-top: 1%;
+    font-size: 25px;
+}
+.textorecuerda{
+  font-weight: bold !important;
+  color: #fc6d00;
+  font-size: 4rem;
+  padding: 10px 0 0 25px;
+}
+.actualmente {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+.textoseccion3{
+  font-size: 45px;
+}
+.visitanos{
+  font-size: 1.5rem;
+  color: #333;
+}
+.predes{
+  padding: 0 0 10px 0;
+}
+
+.centro {
+    text-align: center;
+}
+mat-label {
+    color: white;
+}
+.multimedia h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fc6d00;
+    font-size: 100px;
+    margin-top: 50px;
+}
+.height55 {
+    height: 55%;
+}
+.height45 {
+    height: 45%;
+}
+.mt100 {
+    margin-top: 50px;
+}
+.position-relative {
+    position: relative;
+}
+
+.fondoImagen {
+    background-size: cover;
+    background-color: transparent;
+    background-position: center center;
+}
+
+.fondoImagen h1,
+.fondoImagen h2 {
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.fondoImagen .boton,
+.fondoNaranja .boton {
+    border-width: 3px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.fondoImagen .boton:hover,
+.fondoNaranja .boton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.naranja {
+    font-weight: 600;
+}
+.width100 {
+    width: 100%;
+}
+.height100 {
+    height: 100%;
+}
+.position-absolute {
+    position: absolute;
+}
+.bottom-align {
+    bottom: 14px;
+}
+
+.muuwho-logo {
+    width: 600px;
+}
+
+.text-container {
+    text-align: left;
+    width: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* colores */
+.blanco {
+    color: #fff;
+}
+.negro {
+    color: #000;
+}
+.gris {
+    color: #999;
+}
+.fondoBlanco {
+    background-color: #fff;
+}
+.fondoNaranja {
+    background-color: #fc6d00;
+}
+/* colores */
+
+.height20 {
+    height: 20%;
+}
+.parentC {
+    display: table;
+}
+.childC {
+    display: table-cell;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.container-actualmente {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.circulo{
+  height:150px;
+  width:150px;
+}
+
+.circulos {
+    margin: -75px 0px 0px 0px;
+    border-radius: 100%;
+    box-shadow: -3px 3px 10px #666;
+}
+.recompensa {
+    color: #fc6d00;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0;
+}
+.lista-3 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.seccion-c{
+  margin: 15px;
+  border-radius: 100%;
+  box-shadow: -3px 3px 10px #666;
+  height: 125px;
+  width: 125px;
+}
+
+.propuesta-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.puesto-label {
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 0;
+}
+.empresa-label {
+    padding: 0;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.top {
+    vertical-align: bottom;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.video-responsive {
+    height: 325px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  width: 100%;
+}
+/*fin clases que se utilizan en el index */
+
+
+/*Botones*/
+
+.boton {
+    text-align: center;
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+1
+.boton .interior {
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.4);
+    padding: 12px 0;
+}
+
+
+
+.fondoBlanco .boton {
+    color: #fff;
+    background-color: #fc6d00;
+    border-bottom: 4px solid #cc5700;
+}
+
+.informativo .boton {
+    margin-bottom: 30px;
+}
+
+.fondoBlanco .boton:hover {
+    background-color: #e66300;
+    border-bottom: 4px solid #e66300;
+}
+
+.informativo .boton {
+    margin-top: 4%;
+    margin-top: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*Termian Botones*/
+
+.enviar {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px 0;
+    border: 3px solid #fff;
+    background-color: transparent;
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+}
+
+.btn_registro {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 6px;
+    width: 47%;
+    float: left;
+    padding: 8px 0;
+    border: 3px solid #fff;
+    background-color: transparent;
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+}
+
+.enviar:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn_registro:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social .boton {
+    border: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.social .boton i {
+    position: absolute;
+    left: 24px;
+    margin-top: 4px;
+}
+
+#boton_general {
+    width: 230px;
+    height: 50px;
+    background-color: #fc6d00;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+#boton_general:hover {
+    background-color: #FF7811;
+    border-bottom: 4px solid #e66300;
+}
+
+.social .facebook {
+    background-color: #3c579e;
+    border-bottom: 4px solid #293b6b;
+}
+
+.social .facebook:hover {
+    background-color: #324984;
+    border-bottom: 4px solid #324984;
+}
+
+.social .gplus {
+    background-color: #df4a32;
+    border-bottom: 4px solid #ac3927;
+}
+
+.social .gplus:hover {
+    background-color: #c5422c;
+    border-bottom: 4px solid #c5422c;
+}
+
+
+/*Termina Cuarta*/
+
+
+.fondoModalH {
+    width: 100%;
+    padding: 10px;
+    font-family: 'muuwho';
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #fc6d00;
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.radio {
+    float: left
+}
+
+option {
+    float: left;
+}
+
+
+.SeparacionTE {
+    color: #ffffff;
+    padding: 0px 2em;
+    font-size: 14px;
+}
+
+.SeparacionNE {
+    color: #ffffff;
+    padding: 0px 1em;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/* Estilos para botón de Google */
+
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 384px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    margin-top: 1em;
+}
+
+#customBtn:hover {
+    cursor: pointer;
+}
+
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+
+span.icon {
+    background: url('/assets/img/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .element-propuesta{
+    margin-top: 5px;
+  }
+  .icono-muuwho{
+    color:#333;
+  }
+  .modal-header{
+    background-color: #4d4d4d;
+    color: #fff;
+  }
+  .background-fixed{
+    background-attachment: inherit;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  /* tarjeta general */
+  .imgprincipal {
+    height: 5em;
+  }
+  .circulo{
+    height:100px;
+    width:100px;
+  }
+  .recompensa {
+      font-size: 1em;
+  }
+  .titulo{
+    padding: 0 0;
+  }
+  .limiteTituloOfertaP{
+      font-size: 1rem;
+  }
+  /* tarjeta general */
+
+  /* registro */
+  .titulo-registro{
+    font-size:14px;
+    padding: 5px 0;
+  }
+  .contraseña-fuente{
+    font-size: 14px;
+  }
+  /* registro */
+
+  /* botones naranja */
+  .btn-naranja{
+    padding: 5px 0;
+  }
+  /* botones naranja */
+
+  /* botones colores */
+  .pdbtn {
+    padding: 10px 10px;
+  }
+  /* botones colores */
+
+  /* video */
+  .video-responsive {
+      height: 200px;
+      width: 100%;
+    }
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+      height: 90%;
+    }
+  /* video */
+
+  /* primera seccion */
+  .muuwho-logo {
+    width: 310px;
+  }
+  .text-container {
+    width: 250px;
+  }
+  .text-primera{
+    font-size: 15px;
+  }
+  /* primera seccion */
+
+  .seccion-imagen{
+    height:75vh;
+  }
+  .seccion-c {
+    height: 75px;
+    width: 75px;
+  }
+  h2{
+    font-size: 15px;
+  }
+
+  .texto-segunda{
+    font-size: 16px;
+  }
+  .actualmente{
+    font-size: 1.2rem;
+  }
+  .textoseccion3 {
+    font-size: 25px;
+  }
+  .textorecuerda{
+    font-size: 2rem;
+    padding: 10px 0 0 0;
+  }
+  .visitanos{
+    font-size: 1em;
+  }
+  .tamaño-logos {
+    font-size: 30px !important;
+  }
+  .mt100 {
+    margin-top: 20px;
+  }
+  .element-propuesta-left {
+    border-left: 0;
+    border-top: 2px solid #fc6d00;
+  }
+  .pdbtn-lg {
+    padding: 0 10px 10px 10px;
+  }
+  .p-btn{
+    margin: 5px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 499px) {
+  .pdbtn-lg {
+    padding: 0 10px 10px 10px;
+  }
+
+  .mt100 {
+    margin-top: 50px;
+  }
+  /* tarjeta general */
+  .imgprincipal {
+    height: 5em;
+  }
+  .circulo{
+    height:100px;
+    width:100px;
+  }
+  .recompensa {
+      font-size: 1em;
+  }
+  .titulo{
+    padding: 0 0;
+  }
+  .limiteTituloOfertaP{
+      font-size: 1rem;
+  }
+  /* tarjeta general */
+
+  /* registro */
+  .titulo-registro{
+    font-size:14px;
+    padding: 5px 0;
+  }
+  .contraseña-fuente{
+    font-size: 14px;
+  }
+  /* registro */
+
+  /* botones naranja */
+  .btn-naranja{
+    padding: 5px 0;
+  }
+  /* botones naranja */
+
+  /* botones colores */
+  .pdbtn {
+    padding: 10px 10px;
+  }
+  /* botones colores */
+
+  /* video */
+  .video-responsive {
+      height: 200px;
+      width: 100%;
+    }
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+      height: 90%;
+    }
+  /* video */
+
+
+  .muuwho-logo {
+    width: 340px;
+  }
+  h2{
+    font-size: 17px;
+  }
+  .fuente-odometer{
+    font-size: 50px;
+  }
+  .texto-segunda{
+    font-size: 18px;
+  }
+  .actualmente{
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    width: 300px;
+  }
+  .text-primera{
+    font-size: 17px;
+  }
+  .textoseccion3 {
+    font-size: 30px;
+  }
+  .textorecuerda{
+    font-size: 2rem;
+    padding: 10px 0 0 0;
+  }
+  .element-propuesta-left {
+    border-left: 0;
+    border-top: 2px solid #fc6d00;
+  }
+  .botonesimg{
+    padding: 15% 0;
+  }
+  .p-btn{
+    margin: 5px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .btn-video, .video-x {
+      width: 95%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .pdbtn-lg {
+    padding: 0 10px 10px 10px;
+  }
+
+  .mt100 {
+    margin-top: 50px;
+  }
+  /* tarjeta general */
+  .imgprincipal {
+    height: 5em;
+  }
+  .circulo{
+    height:100px;
+    width:100px;
+  }
+  .recompensa {
+      font-size: 1em;
+  }
+  .titulo{
+    padding: 0 0;
+  }
+  .limiteTituloOfertaP{
+      font-size: 1rem;
+  }
+  /* tarjeta general */
+
+  /* registro */
+  .titulo-registro{
+    font-size:14px;
+    padding: 5px 0;
+  }
+  .contraseña-fuente{
+    font-size: 14px;
+  }
+  /* registro */
+
+  /* botones naranja */
+  .btn-naranja{
+    padding: 5px 0;
+  }
+  /* botones naranja */
+
+  /* video */
+  .video-responsive {
+      height: 250px;
+      width: 100%;
+    }
+  /* video */
+
+
+  .muuwho-logo {
+    width: 340px;
+  }
+  h2{
+    font-size: 17px;
+  }
+  .fuente-odometer{
+    font-size: 50px;
+  }
+  .texto-segunda{
+    font-size: 18px;
+  }
+  .actualmente{
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    width: 300px;
+  }
+  .text-primera{
+    font-size: 17px;
+  }
+  .textoseccion3 {
+    font-size: 30px;
+  }
+  .textorecuerda{
+    font-size: 2rem;
+    padding: 10px 0 0 0;
+  }
+  .element-propuesta-left {
+    border-left: 0;
+    border-top: 2px solid #fc6d00;
+  }
+  .botonesimg{
+    padding: 15% 0;
+  }
+  .p-btn{
+    margin: 5px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 0;
+    font-size: 1rem;
+  }
+  .titulo-registro {
+    font-size: 21px;
+  }
+  .textoseccion3 {
+    font-size: 30px;
+  }
+  .fuente-odometer{
+    font-size: 40px;
+  }
+  .element-propuesta-left {
+    border-left: 0;
+    border-top: 2px solid #fc6d00;
+  }
+  .seccion-c{
+    height: 125px;
+    width: 125px;
+  }
+  .textorecuerda{
+    font-size: 2.5rem;
+  }
+  .video-responsive {
+      height: 250px;
+      width: 100%;
+  }
+  .mvid{
+    margin: 0 0 20px 0;
+  }
+  .mt100 {
+    margin-top: 35px;
+  }
+  .p-btn{
+    margin: 5px 0 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .textoseccion3 {
+    font-size: 25px;
+  }
+  .p-btn{
+      margin: 10px 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  .background-fixed{
+    background-attachment: inherit;
+  }
+}

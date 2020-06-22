@@ -1,0 +1,94 @@
+<app-header></app-header>
+<app-tarjetas></app-tarjetas>
+  <section class="alto">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 titulo">
+            <h2>{{'estadisticas'|translate}}</h2>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="cabecera">
+                <h3>{{'hitchs-head-label'|translate}}</h3>
+            </div>
+            <div class="row pinicio">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-md-12">
+                <div class="ver">
+                <canvas baseChart width="400" height="400"
+                            [datasets]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [options]="lineChartOptions"
+
+                            [legend]="lineChartLegend"
+                            [chartType]="lineChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-md-12">
+                <table class="table table-responsive table-condensed">
+                  <tr>
+                    <th *ngFor="let label of lineChartLabels">{{label}}</th>
+                  </tr>
+                  <tr *ngFor="let d of lineChartData">
+                    <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+                  </tr>
+                </table>
+                <button class="btn btn-primary btn-block" (click)="randomize()">CLICK</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 psub">
+            <div class="cabeceras-sub bder">
+                <h3>{{'stats-offers-lbl'|translate}}</h3>
+            </div>
+            <div class="ver">
+                <canvas baseChart
+                    [data]="doughnutChartData"
+                    [labels]="doughnutChartLabels"
+                    [colors]="doughnutChartColors1"
+                    [chartType]="doughnutChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+                </canvas>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 psub">
+          <div class="cabeceras-sub bder">
+              <h3>{{'headeru-contacts-head'|translate}}</h3>
+          </div>
+          <div class="ver">
+              <canvas baseChart
+                [data]="doughnutChartData2"
+                [labels]="doughnutChartLabels2"
+                [colors]="doughnutChartColors2"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 psub">
+          <div class="cabeceras-sub">
+              <h3>{{'tipo-ofert'|translate}}</h3>
+          </div>
+          <div class="ver">
+              <canvas baseChart
+                [data]="doughnutChartData3"
+                [labels]="doughnutChartLabels3"
+                [colors]="doughnutChartColors3"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<app-footer></app-footer>

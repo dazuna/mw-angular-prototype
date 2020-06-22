@@ -1,0 +1,81 @@
+<header class="sticky-top">
+  <section id="menuprincipal" class="linea-naranja">
+
+    <div class="container d-none d-lg-block">
+      <div class="row ">
+        <div class="col-lg-5">
+          <img routerLink="/#" class="headerimg flecha d-none d-md-block" src="assets/img/img_header_logo.png" alt="">
+        </div>
+
+        <div class="col-lg-5">
+          <div class="row padding-botones">
+            <div class="col-12">
+              <div class="row boton-derecha">
+                <div class="col-4">
+                  <h6 class="">{{ 'index-register-unete' | translate }}</h6>
+                </div>
+                <div class="col-4">
+                  <button routerLink="/registro-usuario" type="button" class="btn btn-outline-primary botones-header">{{ 'index-register-label' | translate }}</button>
+                </div>
+                <div class="col-4">
+                  <button routerLink="/registro-empresa" type="button" class="btn btn-outline-primary botones-header boton-izquierda">{{ 'index-register-user' | translate }}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <nav class="navbar navbar-light bg-light padding-botones">
+            <!-- <img routerLink="/1" class="headerimg flecha d-lg-none" src="assets/img/img_header_logo.png" alt=""> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-sin-login" aria-controls="menu-sin-login" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-light">
+      <img routerLink="/1" class="headerimg flecha d-lg-none" src="assets/img/img_header_logo.png" alt="">
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu-sin-login" aria-controls="menu-sin-login" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu-sin-login">
+        <div class="container">
+          <div class="row borde-menu">
+            <div class="col-md-3 padding-menuprincipal">
+              <a class="color-letra font-weight-light" routerLink="/terminos-condiciones">{{ 'footer-terms-label' | translate }}</a>
+            </div>
+            <div class="col-md-3 padding-menuprincipal">
+              <a class="color-letra font-weight-light" routerLink="/politicas-de-privacidad">{{ 'footer-policy-label' | translate }}</a>
+            </div>
+            <div class="col-md-3 padding-menuprincipal">
+              <a class="color-letra font-weight-light" routerLink="/quienes-somos">{{ 'footer-us-label' | translate }}</a>
+            </div>
+            <div class="col-md-3 padding-menuprincipal">
+              <a class="color-letra font-weight-light" routerLink="/preguntas-frecuentes">{{ 'footer-faq-label' | translate }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-lg-none">
+      <div class="row padding-botones">
+        <div class="col-md-4 col-sm-4 col-4">
+          <h6 class="text-center">{{ 'index-register-unete' | translate }}</h6>
+        </div>
+        <div class="col-md-4 col-sm-4 col-4">
+          <button routerLink="/registro-usuario" type="button" class="btn btn-outline-primary botones-header">{{ 'index-register-label' | translate }}</button>
+        </div>
+        <div class="col-md-4 col-sm-4 col-4">
+          <button routerLink="/registro-empresa" type="button" class="btn btn-outline-primary botones-header">{{ 'index-register-user' | translate }}</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</header>

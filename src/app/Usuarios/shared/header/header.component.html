@@ -1,0 +1,190 @@
+<header class="sticky-top">
+    <section id="menuprincipal" class="linea-naranja d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div routerLink="/ofertas-trabajo" class="col-lg-2 col-md-3 flecha">
+                    <img class="headerimg" src="assets/img/img_header_logo.png" alt="">
+                </div>
+
+                <div class="col-lg-3 col-md-5">
+                    <div class="text-center derecha mr-110">
+                        <h2>$ 10000.<span class="decimal">00</span> Usd</h2>
+                        <h6>{{'headeru-currently-lbl'|translate}}</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="row miconos">
+                        <div class="col-offset-1">
+
+                        </div>
+                        <div class="col-2">
+                            <a href="#"><i class="if fas fa-envelope"></i></a>
+                        </div>
+
+                        <div class="col-2">
+                            <a routerLink="/ofertas-guardadas"><i class="fas fa-bookmark if"> </i></a>
+                        </div>
+
+                        <div class="col-2">
+                            <a routerLink="/contactos"><i class="far fa-address-book if"> </i></a>
+                        </div>
+
+                        <div class="col-2 ">
+                            <a routerLink="/notificaciones"><i class="if fas fa-bell "></i></a>
+                        </div>
+
+                        <div class="col-2">
+                            <a data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation"><i class="if fas fa-search flecha"></i></a>
+                        </div>
+
+                        <div class="col-offset-1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="row mimagen">
+                        <div class="col-7 ">
+                            <img class="imgRedonda posicion-imagen flecha" routerLink="/perfil-usuario" src="assets/img/profiledefault.png" alt="">
+                        </div>
+
+                        <div class="col-5">
+                            <div class="pos-f-t">
+                                <nav class="navbar bg-light">
+                                    <button id="btnuser" class="navbar-toggler arrow" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa fa-angle-down flecha-abajo" aria-hidden="false"></i>
+                         <i class="fa fa-angle-up flecha-arriba" aria-hidden="true"></i></span> {{'headeru-menu-head'|translate}}
+                       </button>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-none d-md-block">
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+            <div class="container">
+                <div class="row">
+
+                  <div class="col-md-12 d-lg-none padding-iconos">
+                      <div class="row">
+                          <div class="offset-1">
+
+                          </div>
+                          <div class="col-md-2">
+                              <a href="#"><i class="if fas fa-envelope"></i></a>
+                          </div>
+
+                          <div class="col-md-2">
+                              <a routerLink="/ofertas-guardadas"><i class="fas fa-bookmark if"> </i></a>
+                          </div>
+
+                          <div class="col-md-2">
+                              <a routerLink="/contactos"><i class="far fa-address-book if"> </i></a>
+                          </div>
+
+                          <div class="col-md-2 ">
+                              <a routerLink="/notificaciones"><i class="if fas fa-bell "></i></a>
+                          </div>
+
+                          <div class="col-md-2">
+                              <a data-toggle="collapse" data-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation"><i class="if fas fa-search flecha"></i></a>
+                          </div>
+
+                          <div class="col-md-1">
+
+                          </div>
+                      </div>
+                  </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <ul class="contenido nav nav-tabs nav-horizontal_Contents derecha" id="" role="tablist">
+
+                            <li routerLink="/perfil-usuario" class="contenido flecha nav-item nav-horizontal_Link menu text-center">
+                                <p>{{'headeru-menu-profile'|translate}}</p>
+                            </li>
+                            <li routerLink="/estadisticas-usuarios" class="contenido flecha nav-item nav-horizontal_Link  menu text-center">
+                                <p>{{'headeru-menu-stats'|translate}}</p>
+                            </li>
+                            <li routerLink="/contactanos" class="contenido flecha nav-item nav-horizontal_Link  menu text-center">
+                                <p>{{'menu-empresa'|translate}}</p>
+                            </li>
+                            <li routerLink="/preguntas-frecuentes-usuario" class="contenido flecha nav-item nav-horizontal_Link  menu text-center">
+                                <p>{{'footer-faq-label'|translate}}</p>
+                            </li>
+                            <li routerLink="/editar-perfil" class="contenido flecha nav-item nav-horizontal_Link  menu text-center">
+                                <p>{{'headeru-menu-conf'|translate}}</p>
+                            </li>
+                            <li class="contenido flecha nav-item nav-horizontal_Link  menu text-center">
+                                <p>{{'headeru-menu-logout'|translate}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-none d-md-block">
+        <div class="collapse navbar-collapse" id="buscador">
+            <div class="container">
+                <div class="row p-buscador">
+                    <div class="offset-5 col-5 d-none d-lg-block">
+                        <mat-form-field>
+                            <input matInput placeholder="{{'buscador'|translate}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-10 d-lg-none">
+                        <mat-form-field>
+                            <input matInput placeholder="{{'buscador'|translate}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-2">
+                        <button routerLink="/buscador" type="submit" aria-hidden="true" class="btn btn-outline-primary"><i class="fa fa-search iconoblue" ></i> {{'general-button-search'|translate}} </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-md-none menuresposiv">
+      <div class="container">
+        <div class="row">
+
+          <div routerLink="/ofertas-trabajo" class="col-md-3 col-sm-3 col-3 border-menu">
+            <div class="text-center">
+               <i class="far fa-id-card iconos-menuresposiv"></i>
+            </div>
+          </div>
+
+          <div routerLink="/contactos" class="col-md-3 col-sm-3 col-3 border-menu">
+            <div class="text-center">
+              <i class="far fa-user iconos-menuresposiv"></i>
+            </div>
+          </div>
+
+          <div routerLink="/mis-hitchs" class="col-md-3 col-sm-3 col-3 border-menu">
+            <div class="text-center">
+               <span class="iconos-muuwho iconos-menuresposiv-muuwho">i</span>
+            </div>
+          </div>
+
+          <div routerLink="/menu-responsivo" class="col-md-3 col-sm-3 col-3 border-menu">
+              <nav class="navbar navbar-light bg-light text-center">
+                <button class="navbar-toggler" type="button">
+                  <span> <i class="fas fa-bars"></i> </span>
+                </button>
+              </nav>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+</header>

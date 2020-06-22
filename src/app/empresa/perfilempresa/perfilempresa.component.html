@@ -1,0 +1,352 @@
+<app-header-emp></app-header-emp>
+<app-tarjetas-emp></app-tarjetas-emp>
+
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="fondoblanco">
+            <div class="perfilcover"></div>
+            <div class="perfilPicBorde">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <a type="button" class="camara flecha" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-camera-retro"></i></a>
+                  <img [src]="imageToDisplay" alt="imagen_perfil" class="perfilPic imguser">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="d-none d-md-block margenseccion">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="fondoblanco p-seccion">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <h5 class="contactos">{{ 'ppp-info-contacts' | translate }}</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+                <div class="col-lg-1 col-md-2">
+                  <div class="circulo"> </div>
+                </div>
+              </div>
+            </div>
+
+            <div class=" col-lg-6 col-md-6">
+              <div class="row btnderecha">
+
+                <div class="offset-lg-4 col-lg-4 col-md-6">
+                  <button type="button" routerLink="#" class="btn btn-outline-primary configuracion derecha" routerLink="/administrador-empresa">{{ 'headeru-menu-conf' | translate }} <i class="fas fa-cogs"></i></button>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <button type="button" class="btn btn-outline-primary editar-perfil" routerLink="/editar-perfil-empresa">{{ 'editar-perfil' | translate }} <i class="fas fa-pencil-alt" ></i></button>
+                </div>
+
+                <div class="col-lg-12 col-md-12 text-right">
+                  <i class="material-icons" style="color:#ffc400">star</i>
+                  <i class="material-icons" style="color:#ffc400">star</i>
+                  <i class="material-icons" style="color:#ffc400">star</i>
+                  <i class="material-icons" style="color:#ffc400">star_half</i>
+                  <i class="material-icons" style="color:#ffc400">star_border</i>
+                  <br>
+                  <a href="http://www.mordor_rocks.com" id="url">{{ 'ir-al-sitio' | translate }}</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <h3 class="font-weight-light">Nombe de la empresa</h3>
+              <h4 class="font-weight-light">Ubicación de la empresa</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="d-md-none">
+  <div class="container">
+    <div class="row fondoblanco margenseccion">
+      <div class="col-sm-6 col-12">
+        <h3 class="font-weight-light text-center">Nombre de la Empresa</h3>
+      </div>
+      <div class="col-sm-3 col-6 text-center">
+        <i class="fas fa-cogs flecha" routerLink="/administrador-empresa"></i>
+      </div>
+      <div class="col-sm-3 col-6 text-center">
+        <i class="fas fa-pencil-alt flecha" routerLink="/editar-perfil-empresa"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{ 'titulo-seccion' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody class="m-al fondoblanco">
+            <tr>
+              <td>
+                <h6 class="colorletras">Quienes somos</h6>
+                <p class="colorletras"></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6 class="colorletras">De lo que estamos orgullosos</h6>
+                <p class="colorletras"></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12" style="float:left;">
+                  <h6 class="colorletras">Tamaño</h6>
+                  <p class="colorletras">1800000</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12" style="float:left;">
+                  <h6 class="colorletras">Sector</h6>
+                  <p class="colorletras">Defensa / Militar</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12" style="float:left;">
+                  <h6 class="colorletras">Fundada</h6>
+                  <p class="colorletras">1900</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{ 'epp-heads-certs' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody class="fondoblanco">
+            <tr>
+              <td>
+                <p>Certificado ISO 5001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Certificado OHSAS 18001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Certificado ISO 22301</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Certificado ISO 27001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Certificado ISO 31000</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Certificado SA 8000</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>OHSAS 18001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>ANAB: ANSI-ASQ National Accreditation Board</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>BSI (British Standards Institution)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Empresa incluyente </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{ 'epp-heads-offers' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <div class="oferta">
+              <div class="headOferta">
+                <img src="assets/img/mordor@mordor.com.png" alt="imgOferta" class="imgOferta">
+              </div>
+              <div class="bodyOferta">
+                <h4 class="colorOferta">$300</h4>
+                <h4>Commander</h4>
+                <h3 class="colorOferta">Mordor</h3>
+              </div>
+              <p class="textoOferta">
+                Para esta oferta se seleccionó: -Lineal -Informal -Medio -Libre -No requerido -Freelance
+                -Office -Viaje -Equipo -Con Experiencia
+              </p>
+            </div>
+            <div class="oferta">
+              <div class="headOferta">
+                <img src="assets/img/mordor@mordor.com.png" alt="imgOferta" class="imgOferta">
+              </div>
+              <div class="bodyOferta">
+                <h4 class="colorOferta">$1000</h4>
+                <h4>Oferta 3 MX</h4>
+                <h3 class="colorOferta">Mordor</h3>
+              </div>
+              <p class="textoOferta">
+                Para esta oferta se seleccionó: -Lineal -Informal -Medio -Libre -No requerido -Freelance
+                -Office -Viaje -Equipo -Con Experiencia
+              </p>
+            </div>
+            <div class="oferta">
+              <div class="headOferta">
+                <img src="assets/img/mordor@mordor.com.png" alt="imgOferta" class="imgOferta">
+              </div>
+              <div class="bodyOferta">
+                <h4 class="colorOferta">$900</h4>
+                <h4>Oferta 9 MX</h4>
+                <h3 class="colorOferta">Mordor</h3>
+              </div>
+              <p class="textoOferta">
+                Para esta oferta se seleccionó: -Lineal -Informal -Medio -Libre -No requerido -Freelance
+                -Office -Viaje -Equipo -Con Experiencia
+              </p>
+            </div>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion-noticias">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <table class="table">
+          <thead class="Color-muuwho">
+            <tr>
+              <th class="font-weight-light cabeceras">{{ 'epp-heads-news' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <div class="oferta">
+              <div class="headnoticia">
+                <img src="assets/img/mordor@mordor.com.png" alt="imgnoticia" class="imgOferta">
+              </div>
+              <div class="bodyOferta">
+                <h4 class="colorOferta">Middle-earth Domination</h4>
+              </div>
+              <p class="textoOferta">
+                <br>
+                Sauron ha regresado a mordor y con planes de dominar a todas las razas que hay en el planeta,
+                desde hombres, hasta los elfos restantes.
+              </p>
+            </div>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="text-center">
+          <img src="assets/img/1000x1000.png" width="200">
+          <h4>{{ 'cambia-foto-perfil' | translate }}</h4>
+          <hr>
+          <label for="fileupload" class="btn btn-outline-primary imagen">{{'elegir-imagen' | translate}}</label>
+          <input type="file" id="fileupload" #imageUpload (change)="imageUploadEvent($event)" accept="image/gif, image/jpeg, image/png" class="oculto">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div *ngIf="mostrar" id="croppie-img">
+                <div>
+                  <ngx-croppie *ngIf="croppieImage" #ngxCroppie [croppieOptions]="croppieOptions" [imageUrl]="croppieImage" (result)="newImageResultFromCroppie($event)"></ngx-croppie>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-botones">
+                <button type="button" class="btn btn-outline-primary cancelar" data-dismiss="modal" (click)="cancelCroppieEdit()" >{{'general-button-cancel' | translate}}</button>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-botones">
+                <button type="button" class="btn btn-outline-primary guardar" data-dismiss="modal" (click)="saveImageFromCroppie()" >{{'general-button-save' | translate}}</button>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer-emp></app-footer-emp>

@@ -1,0 +1,27 @@
+.mat-form-field{
+  width: 100%;
+  font-size: 20px;
+}
+.icono-menu-r{
+  font-size: 25px;
+  margin: 15px 0;
+  color: #4d4d4d;
+}
+h3{
+    line-height: 1.8;
+    padding: 0 0 10px 0;
+}
+h6{
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 0;
+}
+i{
+  font-size: 25px;
+  color: #4d4d4d;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.fondo-bac{
+  background-color: #fff;
+}

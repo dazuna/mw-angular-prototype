@@ -1,0 +1,90 @@
+/* .ng-invalid.ng-touched.mat-input-element:not(form){
+  border-bottom: 1px solid red;
+} */
+
+
+a{
+  color: #333;
+}
+.tabbable .nav-tabs {
+   overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+}
+.icono-ruser{
+  font-size: 30px;
+  line-height: 50px;
+  color: #ff6d00;
+}
+.fondo{
+  background-color: #fff;
+}
+.titulo {
+    color: #6d7aa3;
+    padding: 10px 0 0 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #ff6d00;
+  color: #fff;
+}
+.mat-form-field{
+  width: 100%;
+}
+.chico-img{
+  height: 79%;
+  width: 100%;
+}
+.m-chico{
+  margin-top: 25px;
+  margin-bottom: -50px;
+}
+.vaca-img{
+  height: 100%;
+  width: 50%;
+}
+.p-vaca{
+  padding: 10px;
+}
+.p-div{
+    padding: 15px 0;
+}
+#myTabContent{
+  padding: 15px 0 0 0;
+}
+.seccion-vaca{
+  max-height: 377.2;
+}
+.oculto{
+  display: none;
+}
+.camara{
+  top: 70px;
+  left: 70px;
+  position: absolute;
+  z-index: 2;
+  font-size: 50px;
+  line-height: 0.5;
+  padding: 5px 10px;
+  opacity: 0.3;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .icono-ruser{
+    color: #4d4d4d;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #4d4d4d;
+    color: #fff;
+  }
+  .ubicacion{
+    color: #4d4d4d!important;
+    border: 1px solid #4d4d4d!important;
+  }
+  .ubicacion:active, .ubicacion:hover, .ubicacion:focus{
+    color: #4d4d4d !important;
+    border: 1px solid #4d4d4d;
+    background-color: #fff !important;
+    box-shadow: 0 0 0 .2rem rgba(77, 77, 77,.5);
+  }
+}

@@ -1,0 +1,98 @@
+<header class="sticky-top">
+  <section id="menuprincipal" class="linea-naranja d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <img class="headerimg" src="assets/img/img_header_logo.png" alt="">
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="text-center">
+            <h2>$ 10000.<span class="decimal">00</span> Usd</h2>
+            <h6>{{ 'headeru-currently-lbl' | translate }} </h6>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="row mimagen">
+            <div class="col-lg-7 col-md-7 ">
+              <img class="imgRedonda posicion-imagen" src="assets/img/profiledefault.png" alt="">
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <div class="pos-f-t">
+                <nav class="navbar bg-light">
+                   <button id="menu" class="navbar-toggler arrow" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa fa-angle-down flecha-abajo" aria-hidden="false"></i>
+                     <i class="fa fa-angle-up flecha-arriba" aria-hidden="true"></i></span> Menú
+                   </button>
+                 </nav>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="collapse navbar-collapse linea-naranja-sub" id="navbarToggleExternalContent">
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <ul class="contenido nav nav-tabs nav-horizontal_Contents derecha" id="" role="tablist">
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                  <a routerLink="/perfil-empresa">{{ 'headeru-menu-profile' | translate }}</a>
+                </li>
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                    <a routerLink="/publicar-oferta-empresa">{{ 'publish-publish-btn' | translate }}</a>
+                </li>
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                  <a routerLink="/contactanos-empresa">{{ 'menu-empresa' | translate }}</a>
+                </li>
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                  <a routerLink="/administrador-empresa">{{ 'eadmin-head-lbl' | translate }}</a>
+                </li>
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                  <a routerLink="/ayuda-empresa">{{ 'footer-faq-label' | translate }}</a>
+                </li>
+                <li class="contenido nav-item nav-horizontal_Link  menu text-center">
+                  <p>{{ 'general-button-close' | translate }}</p>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-md-none menuresposiv">
+    <div class="container">
+      <div class="row">
+
+        <div routerLink="/ofertas-empresa" class="col-md-3 col-sm-3 col-3 border-menu">
+          <div class="text-center">
+             <i class="far fa-bookmark iconos-menuresposiv"></i>
+          </div>
+        </div>
+
+        <div routerLink="/wallet" class="col-md-3 col-sm-3 col-3 border-menu">
+          <div class="text-center">
+            <i class="fas fa-dollar-sign iconos-menuresposiv"></i>
+          </div>
+        </div>
+
+        <div routerLink="/noticias-empresa" class="col-md-3 col-sm-3 col-3 border-menu">
+          <div class="text-center">
+            <i class="far fa-newspaper iconos-menuresposiv"></i>
+          </div>
+        </div>
+
+        <div routerLink="/menu-empresa-responsivo" class="col-md-3 col-sm-3 col-3 border-menu">
+          <div class="text-center">
+            <i class="fas fa-bars iconos-menuresposiv"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</header>

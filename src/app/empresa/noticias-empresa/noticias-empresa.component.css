@@ -1,0 +1,75 @@
+h2{
+    color: #999999;
+  }
+
+h3{
+  color: #db4437;
+}
+
+p{
+  color: #333;
+}
+.p-seccion{
+  padding: 0 0 35px 0;
+}
+.mat-form-field{
+  width: 100% !important;
+}
+.icolor{
+  color: #ff6d00;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+.w-95{
+  width: 95% !important;
+}
+
+.ptarjetas{
+  padding-top: 3.8rem;
+  padding-left: 1.5rem;
+  background-color: #fff;
+}
+.perfilcover{
+  min-height: 196px !important;
+}
+.perfilPicBorde{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: -3rem 20px;
+}
+.perfilPic{
+  width: 90px;
+  height: 90px;
+}
+
+.border-tarjetas{
+  border:1px solid #333;
+  margin: 10px 0 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .p-seccion{
+    padding: 0 0 70px 0;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .perfilPicBorde{
+    margin: -3rem auto;
+  }
+  .perfilcover{
+    min-height: 185px !important;
+  }
+  .icolor{
+    color: #4d4d4d ;
+  }
+  .p-seccion{
+    padding: 0 0 90px 0;
+  }
+}

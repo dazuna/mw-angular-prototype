@@ -1,0 +1,16 @@
+h2{
+  color: #999999;
+}
+.fondo{
+  background-color: #fff;
+  border: 1px solid #333;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.p-btns{
+  padding: 10px 10px;
+}
+.width100{
+  width: 100%;
+}

@@ -1,0 +1,131 @@
+<app-header></app-header>
+<app-tarjetas></app-tarjetas>
+  <section class="alto">
+    <div class="container">
+      <div class="row ptitulo">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <h2 class="text-center letragris">{{'alerts-head-lbl'|translate}}</h2>
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="row justify-content-center pmenu">
+          <div class="col-lg-4 col-md-6 col-sm-8 col-8">
+            <nav class="nav contenido nav-horizontal menu-tabs menu-horizontal text-center scrolling-wrapper tabbable">
+              <ul class="contenido nav nav-tabs nav-horizontal_Contents altodetexto" id="myTab" role="tablist">
+
+                <li class="contenido nav-item nav-horizontal_Link">
+                  <a class="contenido nav-link active nav-horizontal_Link texto-contenido font-weight-light" id="hitch-tab" data-toggle="tab"
+                  href="#hitch" role="tab" aria-controls="hitch" aria-selected="true">Hitchs</a>
+                </li>
+
+                <li class="contenido nav-item nav-horizontal_Link">
+                  <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="recomendacion-tab"
+                  data-toggle="tab" href="#recomendacion" role="tab" aria-controls="recomendacion"
+                  aria-selected="false">{{'recomendacion'|translate}}</a>
+                </li>
+
+                <li class="contenido nav-item nav-horizontal_Link">
+                  <a class="contenido nav-link nav-horizontal_Link texto-contenido font-weight-light" id="peticion-tab"
+                  data-toggle="tab" href="#peticion" role="tab" aria-controls="peticion"
+                  aria-selected="false">{{'peticion'|translate}}</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="tab-content">
+          <div class="tab-pane show active" id="hitch" role="tabpanel" aria-labelledby="hitch-tab">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr class="tabla-ofertas text-center">
+                  <th class="font-weight-light" scope="col">{{'emisor'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'index-register-label'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'fulloffer-description-label'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'rechazar'|translate}} / {{'general-button-accept'|translate}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr valign="middle">
+                  <td>
+                    <p>emisor</p>
+                  </td>
+                  <td>
+                    <p>empresa</p>
+                  </td>
+                  <td>
+                    <p>descripción</p>
+                  </td>
+                  <td >
+                    <mat-slide-toggle>Rechazar / Aceptar</mat-slide-toggle>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="tab-pane" id="recomendacion" role="tabpanel" aria-labelledby="recomendacion-tab">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="tabla-ofertas text-center">
+                <th class="font-weight-light" scope="col">{{'emisor'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'index-register-user'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'fulloffer-description-label'|translate}}</th>
+                <th class="font-weight-light" scope="col">{{'rechazar'|translate}} / {{'general-button-accept'|translate}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr valign="middle">
+                <td>
+                  <p>emisor</p>
+                </td>
+                <td>
+                  <p>empresa</p>
+                </td>
+                <td>
+                  <p>descripción</p>
+                </td>
+                <td >
+                  <mat-slide-toggle>Rechazar / Aceptar</mat-slide-toggle>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          </div>
+          <div class="tab-pane" id="peticion" role="tabpanel" aria-labelledby="peticion-tab">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr class="tabla-ofertas text-center">
+                  <th class="font-weight-light" scope="col">{{'emisor'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'index-register-user'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'fulloffer-description-label'|translate}}</th>
+                  <th class="font-weight-light" scope="col">{{'general-button-delete'|translate}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr valign="middle">
+                  <td>
+                    <p>emisor</p>
+                  </td>
+                  <td>
+                    <p>empresa</p>
+                  </td>
+                  <td>
+                    <p>descripción</p>
+                  </td>
+                  <td >
+                    <mat-checkbox>Eliminar</mat-checkbox>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+<app-footer></app-footer>

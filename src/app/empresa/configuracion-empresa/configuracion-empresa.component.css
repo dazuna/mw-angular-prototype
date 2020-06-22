@@ -1,0 +1,147 @@
+.tabbable .nav-tabs {
+   overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+}
+.ptitulo {
+    padding: 20px 0px 0px 0px;
+}
+
+.pbotones{
+  padding: 20px 0;
+}
+
+nav {
+    padding: 15px 0px;
+}
+
+.w100{
+  width: 100%!important;
+}
+
+.modal-header{
+  color: #fff;
+  background-color: #ff6d00;
+}
+
+.close:not(:disabled):not(.disabled){
+  color: #fff;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+  color: #fff;
+}
+
+.eliminar{
+  background-color: #f2f2f2!important;
+}
+.eliminar:active, .eliminar:hover, .eliminar:focus{
+  background-color: #f2f2f2!important;
+}
+
+.agregar{
+  background-color: #f2f2f2!important;
+}
+.agregar:active, .agregar:hover, .agregar:focus{
+  background-color: #f2f2f2!important;
+}
+
+.color-muuwho:active, .color-muuwho:hover, .color-muuwho:focus{
+  background-color: #f2f2f2!important;
+}
+.p-user{
+  padding: 25px 0;
+}
+
+.mat-form-field {
+    width: 50%
+}
+
+.iconoconfiguracion {
+    font-size: 20px;
+    margin: -20px 0 3px 0;
+    color: #ff6d00;
+    float: right;
+}
+
+.formizquierdo {
+    float: left;
+    width: 40%;
+}
+
+.candados {
+    cursor: pointer;
+}
+
+.nav {
+    background-color: #cccccc;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #fc6d00;
+    color: #fff !important;
+}
+
+nav ul a:hover {
+    background-color: #fc6d00;
+    color: #fff;
+}
+
+a {
+    color: #333;
+}
+
+.imgRedonda {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    margin: 5px 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .mat-form-field {
+      width: 80%
+  }
+  .pbtn{
+    padding: 15px 0 30px 0;
+  }
+  .Color-muuwho {
+    background-color:#4d4d4d;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+      min-height: 66px;
+  }
+  nav ul a:hover {
+      min-height: 66px;
+  }
+  .contenido.nav-horizontal_Link[aria-selected="true"] {
+      background-color:#4d4d4d !important;
+  }
+
+  .contenido.nav-link.nav-horizontal_Link:hover {
+      background-color: #4d4d4d!important;
+  }
+  .iconoconfiguracion{
+    color: #4d4d4d;
+  }
+  .modal-header{
+    background-color: #4d4d4d;
+  }
+  .pbotones{
+    padding: 20px 0 40px 0;
+  }
+  .p-user{
+    padding: 20px 0 40px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pbotones{
+    padding: 20px 0 35px 0;
+  }
+  .p-user{
+    padding: 20px 0 35px 0;
+  }
+}

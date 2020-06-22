@@ -1,0 +1,202 @@
+/* buscador */
+.ptitulo{
+  color: #6d7aa3;
+}
+.mbbotones{
+  margin-bottom: 10px;
+}
+.margenizq{
+  margin-left: 17px;
+}
+.menuizquierdo{
+  float: inline-start;
+  position: absolute;
+}
+
+.p-seccionbtn{
+  padding: 0 0 30px 0;
+}
+
+.sticky-top-3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 160px;
+  z-index:2;
+  border: 2px solid #ccc;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+}
+ .fondo-buscador{
+   background-color: #fff;
+ }
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.icono-buscador{
+  font-size: 20px;
+  line-height: 50px;
+  color: #ec762c;
+}
+
+
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus{
+  background-color: #fff !important;
+  color: #000;
+  border: 2px solid #ff6d00;
+}
+/* buscador */
+
+
+.salario-chico{
+  margin: -10px 0 !important;
+}
+.img-chico{
+  margin: -5px 0 !important;
+}
+.psinm{
+  margin: 0 !important;
+}
+.general{
+    padding:5px 0;
+}
+.example-card{
+  border: 2px solid #ccc;
+}
+.borde-izquierdo{
+    border-left: 2px solid #ff6d00;
+}
+.example-header-image {
+  background-image: url('https://s3.amazonaws.com/muuwho-images/ProfileImages/uriel.sanchez@cabify.com/uriel.sanchez@cabify.com.png?1536170297435');
+  background-size: cover;
+}
+.mat-card{
+  margin-top: 10px;
+}
+.letra-cardc{
+  font-size: 10px;
+  text-align: center;
+  line-height: 10px;
+  margin: 0 0 !important;
+}
+.mat-card-image {
+    height: 25vh;
+}
+.mat-card-avatar{
+  height: 60px;
+  width: 60px;
+}
+.card-img-top{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.imagenes-chicas{
+  width: 100%;
+}
+.card-deck{
+  margin-top: 15px;
+}
+.card{
+  border: 2px solid #ccc;
+}
+.contenido-derecho{
+  width: 68%;
+  text-align: right;
+}
+button{
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ff6d00;
+  cursor: pointer;
+  font-size: 20px;
+}
+.color-letra{
+  color: #ff6d00;
+}
+.iconos-muuwho{
+  font-size: 38px;
+  line-height: .5px;
+  color: #ff6d00;
+  }
+.iconos-muuwho-chico{
+  font-size: 25px;
+  line-height: 10px;
+  color: #ff6d00;
+  }
+.icono-pequeno{
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 341px) {
+  .iconos-muuwho-chico {
+    font-size: 35px;
+    padding: 0 5px;
+  }
+  .icono-pequeno{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .letra-cardc{
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .esconder{
+    display: none;
+  }
+  .sticky-top-3 {
+    top: 40px;
+  }
+  .margenizq2{
+    margin-left: 17px;
+  }
+  button{
+    font-size: 17px;
+    height: 100%;
+    border: 1px solid #4d4d4d;
+  }
+  .iconos-muuwho{
+    font-size: 32px !important;
+    }
+  .letra-cardc{
+    font-size: 15px;
+    line-height: inherit;
+    margin: 0 0 5px 0 !important;
+  }
+  .borde-izquierdo{
+    border-left: 2px solid #4d4d4d;
+  }
+  .mar-botones{
+    margin: 5px 0;
+  }
+  .icono-buscador{
+    color: #4d4d4d;
+  }
+  .color-letra{
+    color: #4d4d4d;
+  }
+  .iconos-muuwho{
+    color: #4d4d4d;
+  }
+  .iconos-muuwho-chico {
+    color: #4d4d4d;
+  }
+  .p-seccionbtn{
+    padding: 0 0 50px 0;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  button {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,167 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.camara{
+  top: 70px;
+  left: 70px;
+  position: absolute;
+  z-index: 2;
+  font-size: 50px;
+  line-height: 0.5;
+  padding: 5px 10px;
+  opacity: 0.3;
+}
+.imguser{
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  border: 4px solid #333;
+}
+.cr-slider{
+  max-width: 75% !important;
+}
+
+.oculto{
+  display: none;
+}
+.fa-input {
+  font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.Color-muuwho{
+  background-color:#ff6d00;
+  color:#edfcfc;
+}
+.Color-muuwho-2{
+  background-color: #999999;
+  color: #edfcfc;
+}
+
+.fondoblanco{
+	background-color: #fff;
+	position: relative;
+}
+.margenseccion{
+  margin-top: -119px;
+}
+/* tamaño de iconos */
+.git{
+  font-size: 30px;
+}
+.behance{
+  font-size: 30px;
+}
+.soundcloud{
+  font-size: 30px;
+}
+.deviantart{
+  font-size: 30px;
+}
+.facebook{
+  font-size: 30px;
+}
+.twitter{
+  font-size: 30px;}
+.instagram{
+  font-size: 30px;
+}
+.snapchat{
+  font-size: 30px;
+}
+.btnderecha{
+  float: right;
+  padding-top: 10px;
+}
+
+/* .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background-color: #007bff !important;
+} */
+
+/* .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus{
+  background-color: #6c757d !important;
+} */
+
+.mat-slider-horizontal{
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .perfilcover{
+    width: 100%;
+    min-height: 186px;
+  }
+  .perfilPicBorde{
+    width: 110px;
+    height: 110px;
+    margin: -50px auto 0 auto;
+  }
+  .perfilPic{
+    width: 90px;
+    height: 90px;
+  }
+  .camara{
+    top: 25px;
+    left: 25px;
+    font-size: 40px;
+  }
+  .m-inicial{
+      padding: 10px 0 0 0;
+  }
+  .margenseccion{
+    margin-top: 0;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
+  .Color-muuwho{
+    background-color: #4d4d4d;
+    color: #edfcfc;
+  }
+  .ultima-seccion{
+    padding: 0 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 395px) {
+  .perfilcover{
+    min-height: 106px;
+  }
+}
+@media only screen and (min-width: 396px) and (max-width: 471px) {
+  .perfilcover{
+    min-height: 150px;
+  }
+}
+@media only screen and (min-width: 472px) and (max-width: 543px) {
+  .perfilcover{
+    min-height: 180px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .perfilPicBorde{
+    width: 150px;
+    height: 150px;
+  }
+  .perfilPic {
+    width: 130px;
+    height: 130px;
+  }
+  .camara{
+    top: 45px;
+    left: 40px;
+  }
+  .btn-sm{
+    margin-left: -10px;
+  }
+  .margenseccion {
+    margin-top: -85px;
+  }
+}

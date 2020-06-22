@@ -1,0 +1,29 @@
+
+p{
+  margin-top: 1rem;
+}
+a{
+  color: #fff !important;
+}
+.menumuuwho{
+  background: #ff6d00;
+  list-style: none;
+  color: #fff !important;
+}
+
+/* clases de bootstrap */
+.nav-link{
+  font-size: 15px;
+}
+.nav-link.disabled{
+  color: #fff;
+}
+.nav-link.disabled:focus {
+  color: #fff !important;
+}
+.nav-link.disabled:hover {
+  color: #fff !important;
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0px rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0);
+}

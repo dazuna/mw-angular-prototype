@@ -1,0 +1,19 @@
+.sinvineta{
+  list-style:none;
+}
+ol li{
+  padding: 5px 0px;
+}
+ol li ol li ul li{
+  padding: 0px 0px;
+}
+.titulo{
+  color: #6d7aa3;
+}
+ .espacio-titulo{
+   padding: 10px 0px;
+ }
+.fondo{
+  background-color: #fff;
+  padding: 10px 10px;
+}
